@@ -1,4 +1,4 @@
-#ROYALTY OFF REVENUE LICENSE
+# ROYALTY OFF REVENUE LICENSE
 
 Version 1, 18 May 2018
 
@@ -6,11 +6,11 @@ Copyright © 2018 William Robert Sadler Hansen
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-##VERSION SPECIFIC PREAMBLE
+## VERSION SPECIFIC PREAMBLE
 
 This is the first version.  There will be more to come as problems are found and improvements thought of.
 
-##PREAMBLE
+## PREAMBLE
 
 The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done. 
 
@@ -69,9 +69,9 @@ The goals of this license are as follows.  If the legalities of the license do n
 
 The precise terms and conditions for copying, distribution and modification follow. Pay close attention to the difference between a "work based on the library" and a "work that uses the library". The former contains code derived from the library, whereas the latter must be combined with the library in order to run.
 
-#TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-##0. 
+## 0. 
 
 This License Agreement applies to any software library or other program which contains a notice placed by the copyright holder or other authorized party saying it may be distributed under the terms of this Royalty Off Revenue (also called "this License"). Each licensee is addressed as "you".
 
@@ -81,13 +81,13 @@ The "Library", below, refers to any such software library or work which has been
 
 "Source code" for a work means the preferred form of the work for making modifications to it. For a library, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the library.
 
-##1. 
+## 1. 
 
 You may copy and distribute verbatim copies of the Library's complete source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and distribute a copy of this License along with the Library.
 
 You may charge a fee for the physical act of transferring a copy, and you may at your option offer warranty protection in exchange for a fee.
 
-##2.
+## 2.
 
  You may modify your copy or copies of the Library or any portion of it, thus forming a work based on the Library, and copy and distribute such modifications or work under the terms of Section 1 above, provided that you also meet all of these conditions:
  
@@ -106,13 +106,13 @@ In addition, mere aggregation of another work not based on the Library with the 
 
 You may alter this license by adding rows to the royalty table in section 14, but you may not remove or modify existing lines.
 
-##4.
+## 4.
 
  You may copy and distribute the Library (or a portion or derivative of it, under Section 2) in object code or executable form under the terms of Sections 1 and 2 above provided that you accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange.
 
 If distribution of object code is made by offering access to copy from a designated place, then offering equivalent access to copy the source code from the same place satisfies the requirement to distribute the source code, even though third parties are not compelled to copy the source along with the object code.
 
-##5.
+## 5.
 
  A program that contains no derivative of any portion of the Library, but is designed to work with the Library by being compiled or linked with it, is called a "work that uses the Library". Such a work, in isolation, is not a derivative work of the Library, and therefore falls outside the scope of this License.
 
@@ -124,7 +124,7 @@ If such an object file uses only numerical parameters, data structure layouts an
 
 Otherwise, if the work is a derivative of the Library, you may distribute the object code for the work under the terms of Section 6. Any executables containing that work also fall under Section 6, whether or not they are linked directly with the Library itself.
 
-##6. 
+## 6. 
 
 As an exception to the Sections above, you may also combine or link a "work that uses the Library" with the Library to produce a work containing portions of the Library, and distribute that work under terms of your choice, provided that the terms permit modification of the work for the customer's own use and reverse engineering for debugging such modifications.
 
@@ -140,26 +140,26 @@ For an executable, the required form of the "work that uses the Library" must in
 
 It may happen that this requirement contradicts the license restrictions of other proprietary libraries that do not normally accompany the operating system. Such a contradiction means you cannot use both them and the Library together in an executable that you distribute.
 
-##7. 
+## 7. 
 
 You may place library facilities that are a work based on the Library side-by-side in a single library together with other library facilities not covered by this License, and distribute such a combined library, provided that the separate distribution of the work based on the Library and of the other library facilities is otherwise permitted, and provided that you do these two things:
 
 - a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities. This must be distributed under the terms of the Sections above.
 - b) Give prominent notice with the combined library of the fact that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work.
 
-##8. 
+## 8. 
 
 You may not copy, modify, sublicense, link with, or distribute the Library except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense, link with, or distribute the Library is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance.
 
-##9. 
+## 9. 
 
 You are not required to accept this License, since you have not signed it. However, nothing else grants you permission to modify or distribute the Library or its derivative works. These actions are prohibited by law if you do not accept this License. Therefore, by modifying or distributing the Library (or any work based on the Library), you indicate your acceptance of this License to do so, and all its terms and conditions for copying, distributing or modifying the Library or works based on it.
 
-##10.
+## 10.
 
  Each time you redistribute the Library (or any work based on the Library), the recipient automatically receives a license from the original licensor to copy, distribute, link with or modify the Library subject to these terms and conditions. You may not impose any further restrictions on the recipients' exercise of the rights granted herein. You are not responsible for enforcing compliance by third parties with this License.
 
-##11. 
+## 11. 
 
 If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not distribute the Library at all. For example, if a patent license would not permit royalty-free redistribution of the Library by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Library.
 
@@ -169,15 +169,15 @@ It is not the purpose of this section to induce you to infringe any patents or o
 
 This section is intended to make thoroughly clear what is believed to be a consequence of the rest of this License.
 
-##12. 
+## 12. 
 
 If the distribution and/or use of the Library is restricted in certain countries either by patents or by copyrighted interfaces, the original copyright holder who places the Library under this License may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License.
 
-##13. 
+## 13. 
 
 If you receive revenue by using or distributing the library, you must pay a fraction of that revenue as a royalty to parties as described in section 14.
 
-##14.  
+## 14.  
 
 How much to pay to who
 
@@ -189,15 +189,15 @@ Fraction of revenue | To
 
 
 
-#NO WARRANTY
+# NO WARRANTY
 
-##15. 
+## 15. 
 
 THERE IS NO WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE LIBRARY "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE LIBRARY IS WITH YOU. SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
-##16. 
+## 16. 
 
 IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 
-#END OF TERMS AND CONDITIONS
+# END OF TERMS AND CONDITIONS
