@@ -20,6 +20,7 @@ The core problem is that existing software licenses provide no direct incentives
 
 Generally, there is currently no easy way to take advantage of the specialization and massive economies of scale that software is naturally suited for (software should have ALL of the economies of scale).
 
+----
 
 The basic idea here is that I took the LGPL V2.1 and more or less slapped a term on it that essentially says "If you use this software to make money, you owe the creator x% off the revenue".
 
@@ -44,6 +45,7 @@ In the future maybe:
  - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
  - Explicitly allow static linking, to allow for better optimizations
 
+----
 
 The goals of this license are as follows.  If the legalities of the license do not line up with these goals, the next version of the license should be changed to line up with these goals:
 
@@ -66,6 +68,7 @@ The goals of this license are as follows.  If the legalities of the license do n
  - The creator/owner of a piece of software should be able to lower the required royalties if they want to.
  - The creator/owner of a piece of software should be able to raise the required royalties if they want to, but users could still use older versions with the older and lower price.
 
+----
 
 The precise terms and conditions for copying, distribution and modification follow. Pay close attention to the difference between a "work based on the library" and a "work that uses the library". The former contains code derived from the library, whereas the latter must be combined with the library in order to run.
 
