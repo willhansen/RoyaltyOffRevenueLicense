@@ -1,6 +1,6 @@
 # ROYALTY OFF REVENUE LICENSE
 
-Version 1, 18 May 2018
+Version 2, 16 July 2018
 
 Copyright © 2018 William Robert Sadler Hansen
 
@@ -8,13 +8,13 @@ Everyone is permitted to copy and distribute verbatim copies of this license doc
 
 ## VERSION SPECIFIC PREAMBLE
 
-This is the first version.  There will be more to come as problems are found and improvements thought of.
+First revision.  Adding royalties by new contributors is now sustainable, and there is now a column for contact info.
 
 ## PREAMBLE
 
 The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done. 
 
-Whenever a robotics company tries to make a robot, they can write all the code from scratch, or lean heavily on the work of volunteers in the form of software under various open source licenses.  This is not working well.  The systems are too complex for one company to do everything, and the work of volunteers tends to be buggy, poorly documented, and difficult to use.  Because people tend not to want to work on the boring bits for free, like documentation, convenience functions, and making sure everything is compatible with everything else.  There are exceptions to this, but they are the best of the best, whereas I want that to be run of the mill.
+Whenever a robotics company tries to make a robot, they can write all the code from scratch, or lean on the work of volunteers in the form of open source software.  This is not working well.  The systems are too complex for one company to do everything, and volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
 
 The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't just slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a tragedy of the commons scenario where everyone gets just the same benefit no matter who puts in the work.
 
@@ -29,20 +29,17 @@ Percentage of revenue means:
  - There is a direct financial incentive for the software creator to want the software user to make more money.  The alternative is a one time license fee, which would incentivize the software to "look shiny", but have no direct motivation for actual usefulness.
  - It's not "profit" based, so the royalties are not vulnerable to arbitrary expenses and "hollywood accounting"
 
-I want this license to be "fire and forget", just slap it on uploaded code and you're done.
+This license is "fire and forget", just slap it on uploaded code and you're done.
 
 If a library with this license includes another library with this license, the percentages add up through the inclusion tree (watch out for this going over 100%).  If you include two libraries, and each of those include the same version of a third one, you only need to pay royalties to the third one once, not once per library that uses it.  This means that each additional library you include in something will progressively cost less as you include more.  Note that you pay royalties to every library in the tree directly, not in a chain of middlemen through the tree.
 
-If someone forks a library with this license, they can't change the original royalty, but they can add another one for the modification.  I am imagining pull requests would include a negotiation for folding the additional royalty into the original royalty percentage, and the related rights for future modifications.
+If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
 
 In the future maybe:
 
- - A minimum revenue before the royalties kick in.  Because who wants to write or cash cheques for 5 cents?
- - A cap on royalties paid per year.  Because past a certain point it becomes cheaper to rewrite the software from scratch than pay a small percentage of massive revenue. Downside: incentives stop when the royalties do.
- - Some way to apply this to tools like text editors and compilers.  Because tools to make better tools should have incentives to be made.
- - Some sort of time dependence on the royalty.  (or just allow market forces to take care of this?)
  - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
  - Explicitly allow static linking, to allow for better optimizations
+ - Expand more on the use case of tools such as editors and compilers, to incentivize their development.
 
 
 The goals of this license are as follows.  If the legalities of the license do not line up with these goals, the next version of the license should be changed to line up with these goals:
@@ -67,9 +64,46 @@ The goals of this license are as follows.  If the legalities of the license do n
  - The creator/owner of a piece of software should be able to raise the required royalties if they want to, but users could still use older versions with the older and lower price.
 
 
+### The Math, and why it needs to be there
+
+If a project has one contributor (called "A") who values their contribution at 10% of revenue, users of the project don't actually pay 10% of their revenue.  They instead pay
+
+0.1 / (1 + 0.1) = 0.090909...  (9.1%)
+
+This division exists to reflect the fact that using the project increases revenue.
+
+If contributor "B" comes along and adds another 10%, the total royalty becomes
+
+0.2 / (1 + 0.2) = 0.16666...  (16.7%)   rather than 20%.
+
+With 0.1 / (1 + 0.2) = 0.0833333...   (8.3%) paid to each of contributors A and B.
+
+
+The reason for this is that by the time we get to contributor Z, with 26 different contributors, each adding 10% of value to the original revenue stream, if the royalties were simply added together, the project would cost 260% of revenue.  And despite the project adding a claimed 260% to revenue, the math works out for the project to be completely unusable by anyone that wants to make any sort of profit.
+
+On the other hand, if we use the other math above, the total royalties come out to
+
+2.6 / (1 + 2.6) = 0.72222... (72.2%)
+
+Which is high, but not impossible.  Especially if the project actually increases revenue by 260%, making the business break even.
+
+
+So, the fractions that each contributor chooses as the value as their contribution is a "nominal royalty", in relation to revenue BEFORE the value of the project is added.
+
+The actual royalty paid is 
+
+Sum / (1 + Sum), where "Sum" is the sum of nominal royalties for each contributor
+
+with x / (1 + Sum) paid to contibutor X (who in this case adds x as their nominal royalty fraction).
+
+
+In the future, it may be necessary to add a multiplier to the Sum that can be adjusted by the project owner for market reasons.
+
+---
+
 The precise terms and conditions for copying, distribution and modification follow. Pay close attention to the difference between a "work based on the library" and a "work that uses the library". The former contains code derived from the library, whereas the latter must be combined with the library in order to run.
 
-# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, MODIFICATION, AND USE
 
 ## 0. 
 
@@ -179,14 +213,25 @@ If you receive revenue by using or distributing the library, you must pay a frac
 
 ## 14.  
 
-How much to pay to who
+### How much to pay to who
 
-If there is exactly one row in this table (the one to "William Robert Sadler Hansen"), you may disregard it and pay no royalties.
+If there is exactly one party described in this table (the one to "William Robert Sadler Hansen"), you may disregard it and pay no royalties.
 
-Fraction of revenue | To
---------------------|----------
-0.000001            | William Robert Sadler Hansen
+For every row in this table, you must pay a fraction of revenue as defined in the "Actual fraction of revenue" column to the party defined in that row.
 
+To                               |  Contact information               | Nominal fraction of revenue | Actual fraction of revenue
+---------------------------------|------------------------------------|-----------------------------|----------------------------
+William Robert Sadler Hansen     | royaltyoffrevenuelicense@gmail.com | 0.000001                    | 0.0000099
+---------------------------------|------------------------------------|-----------------------------|----------------------------
+                                 |                                    | NOMINAL SUM: 0.000001       | ACTUAL SUM: 0.0000099
+
+The "Nominal fraction of revenue" column values are to be chosen by the party adding each row.
+
+The "NOMINAL SUM" value is the sum of the "Nominal fraction of revenue" column and must be recalculated each time a row is added or modified, BEFORE the "Actual fraction of revenue" column is recalculated.
+
+The values in the "Actual fraction of revenue" column are to be calculated by the formula (x / (1 + NOMINAL SUM)), where "x" is the value in the "Nominal fraction of revenue" column in the same row. This entire column must be recalculated each time a row is added or modified.
+
+The "ACTUAL SUM" value is the sum of the "Actual fraction of revenue" column and must be recalculated each time a row is added or modified, AFTER the "Actual fraction of revenue" column is recalculated.
 
 
 # NO WARRANTY
