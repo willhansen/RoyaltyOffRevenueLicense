@@ -15,6 +15,8 @@ Businesses want their tools to be easy to use as well as well tested, documented
 
 These people tend to have small budgets, and want their software usable and free.
 
+---
+
 ## Desirable license features
 
 ### Open source
@@ -59,6 +61,8 @@ Another strength of the Free Software licenses is that having all the conditions
 
 A key aspect of being easy to include in a project is keeping the conditions of the license local to the covered code.  For instance, like how the LGPL only requires changes to the library to be published, rather than the code of the entire project that includes the library, like the GPL.
 
+---
+
 ## Current licensing options
 
 There are really two main questions to consider for each of these options:
@@ -88,6 +92,7 @@ Free to use, and you can hide any modifications to the code.  This is the kind o
 
 This is one of the more business-friendly ways of selling software.  It works, but it's not a good solution if you care about latency, security, or have an inconsistent internet connection.
 
+---
 
 ## Proposed solution: The Royalty Off Revenue license
 
