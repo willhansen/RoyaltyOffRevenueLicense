@@ -1,5 +1,6 @@
 # The Royalty Off Revenue License
 
+
 ## Perspectives we care about
 
 ### Library developers
