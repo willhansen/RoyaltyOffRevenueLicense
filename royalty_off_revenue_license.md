@@ -1,18 +1,18 @@
 # ROYALTY OFF REVENUE LICENSE
 
-Version 2, 16 July 2018
+Version 1, 14 July 2018
 
-Copyright © 2018 William Robert Sadler Hansen
+Copyright © 2019 William Robert Sadler Hansen
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
 ## VERSION SPECIFIC PREAMBLE
 
-First revision.  Adding royalties by new contributors is now sustainable, and there is now a column for contact info.
+THE GRAND RELEASE!
 
 ## PREAMBLE
 
-The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done. 
+The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done.
 
 Whenever a robotics company tries to make a robot, they can write all the code from scratch, or lean on the work of volunteers in the form of open source software.  This is not working well.  The systems are too complex for one company to do everything, and volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
 
@@ -26,7 +26,7 @@ The basic idea here is that I took the LGPL V2.1 and more or less slapped a term
 
 Percentage of revenue means:
 
- - It's effectively free for students, researchers, and pre-revenue startups. 
+ - It's effectively free for students, researchers, and pre-revenue startups.
  - There is a direct financial incentive for the software creator to want the software user to make more money.  The alternative is a one time license fee, which would incentivize the software to "look shiny", but have no direct motivation for actual usefulness.
  - It's not "profit" based, so the royalties are not vulnerable to arbitrary expenses and "hollywood accounting"
 
@@ -50,10 +50,10 @@ The goals of this license are as follows.  If the legalities of the license do n
  - If someone makes money by using or selling your code, they need to give you a fraction of their revenue
     - Running your code to make money -> pay royalty
     - Selling an application that uses your code -> pay royalty on sale revenue
-    - End user buys application that uses your code, and uses that application to make money -> pay royalty 
+    - End user buys application that uses your code, and uses that application to make money -> pay royalty
         - (To prevent a shell company selling expensive software for 1$ to the "real" user, thus gaming the royalty system.  Or would that just be regularly illegal, so we don't have to cover it here?)
         - (This also incentivizes tools such as editors and compilers)
-    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty 
+    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
         - (This one is a bit iffier than the others, but I think it's the same case as the point above, the robot being essentially the same as a pc running an application, and the royalties being for the use of the software rather than for the sale of the hardware.)
  - If someone modifies your code, they may add their own royalties on top of the existing ones
     - (As an incentive for them to make your code better)
@@ -93,7 +93,7 @@ Which is high, but not impossible.  Especially if the project actually increases
 
 So, the fractions that each contributor chooses as the value as their contribution is a "nominal royalty", in relation to revenue BEFORE the value of the project is added.
 
-The actual royalty paid is 
+The actual royalty paid is
 
 Sum / (1 + Sum), where "Sum" is the sum of nominal royalties for each contributor
 
@@ -108,7 +108,7 @@ The precise terms and conditions for copying, distribution and modification foll
 
 # TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, MODIFICATION, AND USE
 
-## 0. 
+## 0.
 
 This License Agreement applies to any software library or other program which contains a notice placed by the copyright holder or other authorized party saying it may be distributed under the terms of this Royalty Off Revenue (also called "this License"). Each licensee is addressed as "you".
 
@@ -118,7 +118,7 @@ The "Library", below, refers to any such software library or work which has been
 
 "Source code" for a work means the preferred form of the work for making modifications to it. For a library, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the library.
 
-## 1. 
+## 1.
 
 You may copy and distribute verbatim copies of the Library's complete source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and distribute a copy of this License along with the Library.
 
@@ -127,7 +127,7 @@ You may charge a fee for the physical act of transferring a copy, and you may at
 ## 2.
 
  You may modify your copy or copies of the Library or any portion of it, thus forming a work based on the Library, and copy and distribute such modifications or work under the terms of Section 1 above, provided that you also meet all of these conditions:
- 
+
  - a) The modified work must itself be a software library.
  - b) You must cause the files modified to carry prominent notices stating that you changed the files and the date of any change.
  - c) You must cause the whole of the work to be licensed at no charge to all third parties under the terms of this License.
@@ -161,7 +161,7 @@ If such an object file uses only numerical parameters, data structure layouts an
 
 Otherwise, if the work is a derivative of the Library, you may distribute the object code for the work under the terms of Section 6. Any executables containing that work also fall under Section 6, whether or not they are linked directly with the Library itself.
 
-## 6. 
+## 6.
 
 As an exception to the Sections above, you may also combine or link a "work that uses the Library" with the Library to produce a work containing portions of the Library, and distribute that work under terms of your choice, provided that the terms permit modification of the work for the customer's own use and reverse engineering for debugging such modifications.
 
@@ -177,18 +177,18 @@ For an executable, the required form of the "work that uses the Library" must in
 
 It may happen that this requirement contradicts the license restrictions of other proprietary libraries that do not normally accompany the operating system. Such a contradiction means you cannot use both them and the Library together in an executable that you distribute.
 
-## 7. 
+## 7.
 
 You may place library facilities that are a work based on the Library side-by-side in a single library together with other library facilities not covered by this License, and distribute such a combined library, provided that the separate distribution of the work based on the Library and of the other library facilities is otherwise permitted, and provided that you do these two things:
 
 - a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities. This must be distributed under the terms of the Sections above.
 - b) Give prominent notice with the combined library of the fact that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work.
 
-## 8. 
+## 8.
 
 You may not copy, modify, sublicense, link with, or distribute the Library except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense, link with, or distribute the Library is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance.
 
-## 9. 
+## 9.
 
 You are not required to accept this License, since you have not signed it. However, nothing else grants you permission to modify or distribute the Library or its derivative works. These actions are prohibited by law if you do not accept this License. Therefore, by modifying or distributing the Library (or any work based on the Library), you indicate your acceptance of this License to do so, and all its terms and conditions for copying, distributing or modifying the Library or works based on it.
 
@@ -196,7 +196,7 @@ You are not required to accept this License, since you have not signed it. Howev
 
  Each time you redistribute the Library (or any work based on the Library), the recipient automatically receives a license from the original licensor to copy, distribute, link with or modify the Library subject to these terms and conditions. You may not impose any further restrictions on the recipients' exercise of the rights granted herein. You are not responsible for enforcing compliance by third parties with this License.
 
-## 11. 
+## 11.
 
 If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not distribute the Library at all. For example, if a patent license would not permit royalty-free redistribution of the Library by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Library.
 
@@ -206,15 +206,15 @@ It is not the purpose of this section to induce you to infringe any patents or o
 
 This section is intended to make thoroughly clear what is believed to be a consequence of the rest of this License.
 
-## 12. 
+## 12.
 
 If the distribution and/or use of the Library is restricted in certain countries either by patents or by copyrighted interfaces, the original copyright holder who places the Library under this License may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License.
 
-## 13. 
+## 13.
 
 If you receive revenue by using or distributing the library, you must pay a fraction of that revenue as a royalty to parties as described in section 14.
 
-## 14.  
+## 14.
 
 ### How much to pay to who
 
@@ -224,9 +224,8 @@ For every row in this table, you must pay a fraction of revenue as defined in th
 
 To                               |  Contact information               | Nominal fraction of revenue | Actual fraction of revenue
 ---------------------------------|------------------------------------|-----------------------------|----------------------------
-William Robert Sadler Hansen     | royaltyoffrevenuelicense@gmail.com | 0.000001                    | 0.0000099
----------------------------------|------------------------------------|-----------------------------|----------------------------
-                                 |                                    | NOMINAL SUM: 0.000001       | ACTUAL SUM: 0.0000099
+Example Mcnobody | ExampleMcnobody@notawebsite.com |  0.000| 0.000
+                                 |                                    | NOMINAL SUM: 0.00       | ACTUAL SUM: 0.00
 
 The "Nominal fraction of revenue" column values are to be chosen by the party adding each row.
 
@@ -239,11 +238,11 @@ The "ACTUAL SUM" value is the sum of the "Actual fraction of revenue" column and
 
 # NO WARRANTY
 
-## 15. 
+## 15.
 
 THERE IS NO WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE LIBRARY "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE LIBRARY IS WITH YOU. SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
-## 16. 
+## 16.
 
 IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
