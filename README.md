@@ -98,7 +98,7 @@ This is one of the more business-friendly ways of selling software.  It works, b
 
 Exactly like its name implies, the Royalty Off Revenue license allows anyone to use the licensed software as long as they give the developer a percentage of the revenue earned from its use.
 
-It also defines how contributors to a project under the license can add their own royalties, offering an incentive to contribute (explained in [Appendix A](#appendix-a-the-math) ).
+It also defines how contributors to a project under the license can add their own royalties, offering an incentive to contribute (explained in [Appendix A](#appendix-a-the-math)).
 
 Code under the license that is modified must be disclosed.
 
