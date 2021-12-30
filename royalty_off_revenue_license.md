@@ -2,7 +2,7 @@
 
 Version 1, 14 July 2018
 
-Copyright © 2019 William Robert Sadler Hansen
+Copyright © 2021 William Robert Sadler Hansen
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 

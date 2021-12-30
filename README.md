@@ -11,9 +11,9 @@ Library developers are making tools to fill needs.  They tend to work on their p
 
 Businesses want their tools to be easy to use as well as well tested, documented, and supported.  Also cheap, but sometimes you have to spend money to make money.
 
-### Personal use / Pre-revenue startups
+### Personal use / Pre-revenue startups / Students / Academic Researchers
 
-These people tend to have small budgets, and want their software usable and free.
+These people tend to have small budgets, and want their software usable and free (in terms of money).
 
 ---
 
@@ -108,7 +108,7 @@ Overall, the license is intended to be largely similar to the LGPL, with the exc
 
 The specific behavior we want out of the license:
 
-- If someone modifies your code, they need to make that modified code available (similar to the lgpl)
+- If someone modifies your code, they need to make that modified code available (similar to the LGPL)
 - If someone makes money by using or selling your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within the license
   - Running your code to gain revenue -> pay royalty on that revenue
   - Selling something containing your code -> pay royalty on sale revenue
@@ -116,7 +116,7 @@ The specific behavior we want out of the license:
   - They may NOT remove existing royalties
   - Adding royalties is the ONLY change they may make to the license
 - The code needs to not cost any money for people who don't use the software to make money
-- If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the lgpl
+- If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the LGPL
 - If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the LGPL
 - Each contributor to a project should be able to lower their own previously added royalty if they want to.
 - Each contributor to a project should be able to raise their own previously added royalty if they want to, though users will still be able to use the lower price from the previous version
