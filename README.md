@@ -21,19 +21,19 @@ These people tend to have small budgets, and want their software usable and free
 
 ### Open source
 
-By which, we mean anyone can see the source code, not necessarily free to use ("Free Software" here refers to that).
+By which, we mean anyone can see the source code, not necessarily free to use.  Distinct from the fully capitalized "Open Source", which comes with additional baggage.
 
 If someone can read, compile, and run the code, all on their local machine, they can trust that they know what they're running.  It's well established that open source code is generally more secure than closed source code.
 
 ### Anyone can contribute
 
-With open source code, anyone can code up improvements to a library or application.  One of the great strengths of Free Software projects is that those people can easily contribute back to the project with a fork or pull request.
+With open source code, anyone can code up improvements to a library or application.  One of the great strengths of Free Software projects is that those people can easily contribute back to the project with a fork or pull request, even without the permission of the original developer.
 
 ### Modifications to the code must be disclosed
 
-There is a lot of duplicated work done by multiple companies trying to accomplish the same thing.  They all hide their code, and work is wasted.  By forcing disclosure of code modifications, that duplicate work is eliminated.
+There is a lot of duplicated work done by multiple companies trying to accomplish the same thing.  They all hide their code, and the same work is done multiple times independently.  By forcing disclosure of code modifications, that duplicate work is eliminated.
 
-On the other hand, when that disclosed code can be used for free by competitors, a tragedy of the commons arises, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a tragedy of the commons can be avoided.
+On the other hand, when that disclosed code can be used for free by competitors, a free rider problem arises, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a free rider problem can be avoided.
 
 ### Costs money
 
@@ -73,6 +73,8 @@ There are really two main questions to consider for each of these options:
 
 Free to use, and you need to recontribute changes made to the code.  This is bad for business owners to apply to their code, because then anyone can use the code without giving them money for it.  LGPL licensed libraries are good to use, because they're free and the license is limited to the library, but the GPL and AGPL are more virulent, and would affect the rest of the codebase.
 
+(As an aside, an ALGPL license apparently does not exist, but should)
+
 ### Dual licensing
 
 GPL unless you pay for a proprietary license, this option offers a path to monetization for library developers and is free if you don't mind the GPL license, but typically allows proprietary license holders to hide their code and requires negotiation for each license.
@@ -85,7 +87,7 @@ Totally excludes commercial use.  Unthinkable for businesses.
 
 ### Permissive licenses (MIT, Apache 2.0, etc.)
 
-Free to use, and you can hide any modifications to the code.  This is the kind of license businesses like to see in the libraries they use, but the lack of benefits for the library developer or forced recontribution means the quality is often left wanting.
+Free to use, and you can hide any modifications to the code.  This is the kind of license businesses like to see in the libraries they use, but the lack of benefits for the library developer or forced recontribution of modified code means the quality is often left wanting.
 
 
 ### Software as a service
@@ -108,17 +110,43 @@ Overall, the license is intended to be largely similar to the LGPL, with the exc
 
 The specific behavior we want out of the license:
 
-- If someone modifies your code, they need to make that modified code available (similar to the LGPL)
-- If someone makes money by using or selling your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within the license
-  - Running your code to gain revenue -> pay royalty on that revenue
-  - Selling something containing your code -> pay royalty on sale revenue
-- If someone modifies your code, they may add their own royalties on top of the existing ones
+- If someone modifies your code and then distributes it, or runs it as part of a service, they need to publish that modified code (similar to the LGPL, or a hypothetical ALGPL)
+- If someone makes money by using or selling your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within an included configuration file 
+  - Someone runs your code to gain revenue -> they pay you a royalty based on that revenue
+    - End user buys application that uses your code, and uses that application to make money -> pay royalty
+    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
+  - Someone sells your code to gain revenue -> they pay you a royalty based on that revenue
+- If someone modifies your code, they may add their own royalties on top of the existing ones, because their work has value too
   - They may NOT remove existing royalties
-  - Adding royalties is the ONLY change they may make to the license
-- The code needs to not cost any money for people who don't use the software to make money
+- If someone runs or distributes your code and does not gain revenue from it, they don't owe anything.
 - If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the LGPL
-- If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the LGPL
-- Each contributor to a project should be able to lower their own previously added royalty if they want to.
-- Each contributor to a project should be able to raise their own previously added royalty if they want to, though users will still be able to use the lower price from the previous version
+- If all users of a piece of software don't get any revenue, this license should be more or less equivalent to a hypothetical ALGPL
+- Each contributor to a project should be able to LOWER their own previously added royalty if they want to.
+- Each contributor to a project should be able to RAISE their own previously added royalty if they want to, though users will still be able to use the lower price from previously released versions
 
-TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use or sell licensed software.
+TL;DR: Like a hypothetical ALGPL, but you have to pay a percentage of your revenue to use or sell licensed software.
+
+---
+
+## How royalties can change with additional contributions
+
+### Why do they need to change?
+
+Allowing additional royalties for contributions to a project motivates those contributions.
+Especially the low-fun, high-value contributions such as documentation, bug fixes, and unit tests.
+
+### Why even limit it at all?
+
+There need to be limits to prevent someone from fixing a typo and changing the royalty distribution to give them all the money.
+Such a change would probably not be accepted to be merged back into the main project, but even having forks of a project with such changes would not be ideal.
+
+### A well-defined process for adding royalties for additional contribution to a project
+
+#### Adding royalties to a project should not reduce the royalties for existing work done
+
+Adding a feature to a project does not reduce the value of existing features.  The process for adding royalties with a contribution should reflect this.
+
+#### Including a library with royalties into a project with royalties should work out the same as if that library and royalties were simply added directly to the project
+
+The contributed value is the same in both cases, so the royalty distributions should be the same.
+
