@@ -3,7 +3,7 @@
 
 The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done.
 
-volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
+Volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead they could be run of the mill.
 
 The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't simply slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a Free Rider Problem, where everyone gets just the same benefit no matter who puts in the work.
 
@@ -13,44 +13,20 @@ Generally, there is currently no easy way to take advantage of the specializatio
 
 Percentage of revenue means:
 
- - It's effectively free for students, researchers, and pre-revenue startups.
+ - It's effectively free for students, hobbyists, researchers, and pre-revenue startups.
  - There is a direct financial incentive for the software creator to want the software user to make more money.  The alternative is a one time license fee, which would incentivize the software to "look shiny", but have no direct motivation for actual usefulness.
  - It's not "profit" based, so the royalties are not vulnerable to arbitrary expenses and "hollywood accounting"
 
-This license is "fire and forget", just slap it on uploaded code and you're done.
+This license should be "fire and forget".  Just set the price, slap it on uploaded code, and you're done.
 
 If a library with this license includes another library with this license, the percentages add up through the inclusion tree (watch out for this going over 100%).  If you include two libraries, and each of those include the same version of a third one, you only need to pay royalties to the third one once, not once per library that uses it.  This means that each additional library you include in something will progressively cost less as you include more.  Note that you pay royalties to every library in the tree directly, not in a chain of middlemen through the tree.
 
 If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
 
-In the future maybe:
-
+TODO:
  - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
  - Explicitly allow static linking, to allow for better optimizations
  - Expand more on the use case of tools such as editors and compilers, to incentivize their development.
-
-----
-
-The goals of this license are as follows.  If the legalities of the license do not line up with these goals, the next version of the license should be changed to line up with these goals:
-
- - If someone modifies your code, they need to make that modified code available (similar to the lgpl)
- - If someone makes money by using or selling your code, they need to give you a fraction of their revenue
-    - Running your code to make money -> pay royalty
-    - Selling an application that uses your code -> pay royalty on sale revenue
-    - End user buys application that uses your code, and uses that application to make money -> pay royalty
-        - (To prevent a shell company selling expensive software for 1$ to the "real" user, thus gaming the royalty system.  Or would that just be regularly illegal, so we don't have to cover it here?)
-        - (This also incentivizes tools such as editors and compilers)
-    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
-        - (This one is a bit iffier than the others, but I think it's the same case as the point above, the robot being essentially the same as a pc running an application, and the royalties being for the use of the software rather than for the sale of the hardware.)
- - If someone modifies your code, they may add their own royalties on top of the existing ones
-    - (As an incentive for them to make your code better)
- - If someone modifies your code, they may NOT remove existing royalties
- - If someone modifies your code, adding royalties is the ONLY change they may make to the license
- - The code needs to be "beer free" for people who don't use the software to make money
- - If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the lgpl
- - If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the lgpl
- - The creator/owner of a piece of software should be able to lower the required royalties if they want to.
- - The creator/owner of a piece of software should be able to raise the required royalties if they want to, but users could still use older versions with the older and lower price.
 
 
 ## Perspectives we care about
@@ -180,6 +156,30 @@ TL;DR: Like a hypothetical ALGPL, but you have to pay a percentage of your reven
 
 ---
 
+----
+
+The goals of this license are as follows.  If the legalities of the license do not line up with these goals, the next version of the license should be changed to line up with these goals:
+
+ - If someone modifies your code, they need to make that modified code available (similar to the lgpl)
+ - If someone makes money by using or selling your code, they need to give you a fraction of their revenue
+    - Running your code to make money -> pay royalty
+    - Selling an application that uses your code -> pay royalty on sale revenue
+    - End user buys application that uses your code, and uses that application to make money -> pay royalty
+        - (To prevent a shell company selling expensive software for 1$ to the "real" user, thus gaming the royalty system.  Or would that just be regularly illegal, so we don't have to cover it here?)
+        - (This also incentivizes tools such as editors and compilers)
+    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
+        - (This one is a bit iffier than the others, but I think it's the same case as the point above, the robot being essentially the same as a pc running an application, and the royalties being for the use of the software rather than for the sale of the hardware.)
+ - If someone modifies your code, they may add their own royalties on top of the existing ones
+    - (As an incentive for them to make your code better)
+ - If someone modifies your code, they may NOT remove existing royalties
+ - If someone modifies your code, adding royalties is the ONLY change they may make to the license
+ - The code needs to be "beer free" for people who don't use the software to make money
+ - If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the lgpl
+ - If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the lgpl
+ - The creator/owner of a piece of software should be able to lower the required royalties if they want to.
+ - The creator/owner of a piece of software should be able to raise the required royalties if they want to, but users could still use older versions with the older and lower price.
+
+
 ## How royalties can change with additional contributions
 
 ### Why do they need to change?
@@ -198,14 +198,85 @@ Such a change would probably not be accepted to be merged back into the main pro
 
 Adding a feature to a project does not reduce the value of existing features.  The process for adding royalties with a contribution should reflect this.
 
-#### Including a library with royalties into a project with royalties should work out the same as if that library and royalties were simply added directly to the project
-
-The contributed value is the same in both cases, so the royalty distributions should be the same.
 
 
 
 
 ### The Math, and why it needs to be there
+
+Scenario: Developers A and B make a piece of software, and put it under the Royalty Off Revenue license.  The user then takes that software and gains x$ of revenue through its use.
+
+The royalties owed on that revenue are described with a share distribution such as the following table.
+
+who         |  shares
+-----------------------
+Developer A |   10
+Developer B |   10
+User        |  100
+-----------------------
+total       |  120
+
+
+User has 100 shares, which represent the revenue after royalties are paid.
+The total shares are 120, which represent the total revenue.
+Developers A and B each have 10 shares, signifying that they split the royalties equally.
+
+The actual payout to each is simply: (shares / total shares) * 100% of total revenue
+
+developer A:   10/120 * 100% = 8.333333%
+developer B:   10/120 * 100% = 8.333333%
+User:         100/120 * 100% = 83.33333%
+
+
+who         |  percent of revenue 
+-----------------------------------
+Developer A |   8.33% 
+Developer B |   8.33%
+User        |  83.33%
+-----------------------------------
+total       | 100.00%
+
+So the royalty percentage for using the software is 16.66%
+
+
+If Developer C comes along and contributes to the project, and allocates themselves one share, that share is created, not taken from someone else.  That added share represents the value added to the project by Developer C's contribution.
+
+who         |  shares
+-----------------------
+Developer A |   10
+Developer B |   10
+Developer C |    1
+User        |  100
+-----------------------
+total       |  121
+
+
+The percentage of revenue table becomes the following:
+
+
+who         |  percent of revenue 
+-----------------------------------
+Developer A |   8.264% 
+Developer B |   8.264%
+Developer C |   0.826%
+User        |  82.646%   (extra 0.001%)
+-----------------------------------
+total       | 100.000%
+
+
+While it initially appears as though the money gained by Developers A and B has dropped, this is countered by the idea that Developer C's contribution has improved the software by one share's worth of value, and thus the end user should gain that much more revenue.
+
+Additionally, the royalty for using the software has risen to 17.35% of revenue, because it is worth more now.
+
+
+If Developers A and B do not agree that Developer C's contribution adds that much value to the software, they are not required to accept a pull request.  However, Developer C can still release a fork of the software with the updated revenue distribution table, and the User may opt to use that fork if they agree with Developer C's value assessment.
+
+Note that while Developer C can allocate themselves new shares, they cannot remove shares from other developers or the end user.
+
+
+
+
+
 
 If a project has one contributor (called "A") who values their contribution at 10% of revenue, users of the project don't actually pay 10% of their revenue.  They instead pay
 
@@ -246,7 +317,6 @@ If you receive revenue by using or distributing the library, you must pay a frac
 
 ### How much to pay to who
 
-If there is exactly one party described in this table (the one to "William Robert Sadler Hansen"), you may disregard it and pay no royalties.
 
 For every row in this table, you must pay a fraction of revenue as defined in the "Actual fraction of revenue" column to the party defined in that row.
 
