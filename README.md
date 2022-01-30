@@ -1,6 +1,58 @@
 # The Royalty Off Revenue License
 
 
+The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done.
+
+volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
+
+The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't simply slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a Free Rider Problem, where everyone gets just the same benefit no matter who puts in the work.
+
+Generally, there is currently no easy way to take advantage of the specialization and massive economies of scale that software is naturally suited for (software should have ALL of the economies of scale).
+
+----
+
+Percentage of revenue means:
+
+ - It's effectively free for students, researchers, and pre-revenue startups.
+ - There is a direct financial incentive for the software creator to want the software user to make more money.  The alternative is a one time license fee, which would incentivize the software to "look shiny", but have no direct motivation for actual usefulness.
+ - It's not "profit" based, so the royalties are not vulnerable to arbitrary expenses and "hollywood accounting"
+
+This license is "fire and forget", just slap it on uploaded code and you're done.
+
+If a library with this license includes another library with this license, the percentages add up through the inclusion tree (watch out for this going over 100%).  If you include two libraries, and each of those include the same version of a third one, you only need to pay royalties to the third one once, not once per library that uses it.  This means that each additional library you include in something will progressively cost less as you include more.  Note that you pay royalties to every library in the tree directly, not in a chain of middlemen through the tree.
+
+If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
+
+In the future maybe:
+
+ - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
+ - Explicitly allow static linking, to allow for better optimizations
+ - Expand more on the use case of tools such as editors and compilers, to incentivize their development.
+
+----
+
+The goals of this license are as follows.  If the legalities of the license do not line up with these goals, the next version of the license should be changed to line up with these goals:
+
+ - If someone modifies your code, they need to make that modified code available (similar to the lgpl)
+ - If someone makes money by using or selling your code, they need to give you a fraction of their revenue
+    - Running your code to make money -> pay royalty
+    - Selling an application that uses your code -> pay royalty on sale revenue
+    - End user buys application that uses your code, and uses that application to make money -> pay royalty
+        - (To prevent a shell company selling expensive software for 1$ to the "real" user, thus gaming the royalty system.  Or would that just be regularly illegal, so we don't have to cover it here?)
+        - (This also incentivizes tools such as editors and compilers)
+    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
+        - (This one is a bit iffier than the others, but I think it's the same case as the point above, the robot being essentially the same as a pc running an application, and the royalties being for the use of the software rather than for the sale of the hardware.)
+ - If someone modifies your code, they may add their own royalties on top of the existing ones
+    - (As an incentive for them to make your code better)
+ - If someone modifies your code, they may NOT remove existing royalties
+ - If someone modifies your code, adding royalties is the ONLY change they may make to the license
+ - The code needs to be "beer free" for people who don't use the software to make money
+ - If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the lgpl
+ - If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the lgpl
+ - The creator/owner of a piece of software should be able to lower the required royalties if they want to.
+ - The creator/owner of a piece of software should be able to raise the required royalties if they want to, but users could still use older versions with the older and lower price.
+
+
 ## Perspectives we care about
 
 ### Library developers
@@ -149,4 +201,66 @@ Adding a feature to a project does not reduce the value of existing features.  T
 #### Including a library with royalties into a project with royalties should work out the same as if that library and royalties were simply added directly to the project
 
 The contributed value is the same in both cases, so the royalty distributions should be the same.
+
+
+
+
+### The Math, and why it needs to be there
+
+If a project has one contributor (called "A") who values their contribution at 10% of revenue, users of the project don't actually pay 10% of their revenue.  They instead pay
+
+0.1 / (1 + 0.1) = 0.090909...  (9.1%)
+
+This division exists to reflect the fact that using the project increases revenue.
+
+If contributor "B" comes along and adds another 10%, the total royalty becomes
+
+0.2 / (1 + 0.2) = 0.16666...  (16.7%)   rather than 20%.
+
+With 0.1 / (1 + 0.2) = 0.0833333...   (8.3%) paid to each of contributors A and B.
+
+
+The reason for this is that by the time we get to contributor Z, with 26 different contributors, each adding 10% of value to the original revenue stream, if the royalties were simply added together, the project would cost 260% of revenue.  And despite the project adding a claimed 260% to revenue, the math works out for the project to be completely unusable by anyone that wants to make any sort of profit.
+
+On the other hand, if we use the other math above, the total royalties come out to
+
+2.6 / (1 + 2.6) = 0.72222... (72.2%)
+
+Which is high, but not impossible.  Especially if the project actually increases revenue by 260%, making the business break even.
+
+
+So, the fractions that each contributor chooses as the value as their contribution is a "nominal royalty", in relation to revenue BEFORE the value of the project is added.
+
+The actual royalty paid is
+
+Sum / (1 + Sum), where "Sum" is the sum of nominal royalties for each contributor
+
+with x / (1 + Sum) paid to contibutor X (who in this case adds x as their nominal royalty fraction).
+
+
+In the future, it may be necessary to add a multiplier to the Sum that can be adjusted by the project owner for market reasons.
+
+
+If you receive revenue by using or distributing the library, you must pay a fraction of that revenue as a royalty to parties as described in section 14.
+
+
+### How much to pay to who
+
+If there is exactly one party described in this table (the one to "William Robert Sadler Hansen"), you may disregard it and pay no royalties.
+
+For every row in this table, you must pay a fraction of revenue as defined in the "Actual fraction of revenue" column to the party defined in that row.
+
+To                               |  Contact information               | Nominal fraction of revenue | Actual fraction of revenue
+---------------------------------|------------------------------------|-----------------------------|----------------------------
+Example Mcnobody | ExampleMcnobody@notawebsite.com |  0.000| 0.000
+                                 |                                    | NOMINAL SUM: 0.00       | ACTUAL SUM: 0.00
+
+The "Nominal fraction of revenue" column values are to be chosen by the party adding each row.
+
+The "NOMINAL SUM" value is the sum of the "Nominal fraction of revenue" column and must be recalculated each time a row is added or modified, BEFORE the "Actual fraction of revenue" column is recalculated.
+
+The values in the "Actual fraction of revenue" column are to be calculated by the formula (x / (1 + NOMINAL SUM)), where "x" is the value in the "Nominal fraction of revenue" column in the same row. This entire column must be recalculated each time a row is added or modified.
+
+The "ACTUAL SUM" value is the sum of the "Actual fraction of revenue" column and must be recalculated each time a row is added or modified, AFTER the "Actual fraction of revenue" column is recalculated.
+
 
