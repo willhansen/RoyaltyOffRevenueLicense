@@ -138,12 +138,14 @@ Overall, the license is intended to be largely similar to the LGPL, with the exc
 
 The specific behavior we want out of the license:
 
-- If someone modifies your code and then distributes it, or runs it as part of a service, they need to publish that modified code (similar to the LGPL, or a hypothetical ALGPL)
-- If someone makes money by using or selling your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within an included configuration file 
-  - Someone runs your code to gain revenue -> they pay you a royalty based on that revenue
-    - End user buys application that uses your code, and uses that application to make money -> pay royalty
-    - Someone buys a robot that is running the library somewhere inside, and makes money by using it -> pay royalty
-  - Someone sells your code to gain revenue -> they pay you a royalty based on that revenue
+- If someone modifies your code and then distributes it, or runs it as part of a service, they need to publish that modified code (similar to the LGPL and AGPL)
+- If someone makes money by use or sale of your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within an included configuration file 
+  - Someone runs your code to gain revenue -> they pay you a royalty
+    - an end user buys software that uses your code, and uses that software to make money -> they pay you a royalty
+    - Someone buys a robot that runs your code, and makes money by using it -> they pay you a royalty
+  - Someone sells your code to gain revenue -> they pay you a royalty
+  - Someone uses your code to create something else, then sells that -> they pay you a royalty
+    - e.g. CAD software, image editors, text editors
 - If someone modifies your code, they may add their own royalties on top of the existing ones, because their work has value too
   - They may NOT remove existing royalties
 - If someone runs or distributes your code and does not gain revenue from it, they don't owe anything.
@@ -152,7 +154,7 @@ The specific behavior we want out of the license:
 - Each contributor to a project should be able to LOWER their own previously added royalty if they want to.
 - Each contributor to a project should be able to RAISE their own previously added royalty if they want to, though users will still be able to use the lower price from previously released versions
 
-TL;DR: Like a hypothetical ALGPL, but you have to pay a percentage of your revenue to use or sell licensed software.
+TL;DR: Like the LGPL, but with the added condition that you have to pay a percentage of your revenue to use or sell licensed software.
 
 ---
 
@@ -190,7 +192,7 @@ Especially the low-fun, high-value contributions such as documentation, bug fixe
 ### Why even limit it at all?
 
 There need to be limits to prevent someone from fixing a typo and changing the royalty distribution to give them all the money.
-Such a change would probably not be accepted to be merged back into the main project, but even having forks of a project with such changes would not be ideal.
+Such a change would probably not be accepted to be merged back into the main project, but even having forks of a project with such changes would cause problems.
 
 ### A well-defined process for adding royalties for additional contribution to a project
 
