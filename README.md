@@ -10,6 +10,8 @@ The core problem is that existing software licenses provide no direct incentives
 
 Generally, there is currently no easy way to take advantage of the specialization and massive economies of scale that software is naturally suited for (software should have ALL of the economies of scale).
 
+---
+
 ## Perspectives we care about
 
 ### Library developers
@@ -138,6 +140,8 @@ Overall, the license is intended to be largely similar to the LGPL, with the exc
 
 TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use licensed software.
 
+---
+
 ### Example use cases:
 
 #### Simple cases
@@ -148,14 +152,14 @@ TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use li
   - eg. a video game:  zero revenue ==> zero royalty
 
 (2) User A makes Thing B by *using* ROR-licensed software, and sells it
+  - ==> Royalty payment on revenue from sale
   - eg. 3D-printing something by using ROR-licensed software
   - eg. writing code with an ROR-licensed editor and selling the results
-  - ==> Royalty payment on revenue from sale
 
 (3) User A makes Thing B that *contains* ROR-licensed software and sells it
+  - ==> No royalty payment
   - eg. A software or device that includes an ROR-licensed library
   - Note that User A could have easily made Thing B not contain ROR-licensed software at time of sale, but download it on first startup
-  - ==> No royalty payment
 
 (4) User A makes Thing B, *applies* the ROR-license to it, and sells it
   - Note that in this scenario, User A has made Thing B from scratch, and the only royalties are payable to User A
