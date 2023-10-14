@@ -201,13 +201,8 @@ If a library with this license includes another library with this license, the p
 
 If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
 
-In the future maybe:
 
- - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
- - Explicitly allow static linking, to allow for better optimizations
- - Expand more on the use case of tools such as editors and compilers, to incentivize their development.
-
-----
+---
 
 
 ### The Math, and why it needs to be there
