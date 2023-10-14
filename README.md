@@ -1,5 +1,14 @@
 # The Royalty Off Revenue License
 
+## Intro
+
+The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done.
+
+Whenever a robotics company tries to make a robot, they can write all the code from scratch, or lean on the work of volunteers in the form of open source software.  This is not working well.  The systems are too complex for one company to do everything, and volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
+
+The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't just slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a tragedy of the commons scenario where everyone gets just the same benefit no matter who puts in the work.
+
+Generally, there is currently no easy way to take advantage of the specialization and massive economies of scale that software is naturally suited for (software should have ALL of the economies of scale).
 
 ## Perspectives we care about
 
@@ -33,7 +42,7 @@ With open source code, anyone can code up improvements to a library or applicati
 
 There is a lot of duplicated work done by multiple companies trying to accomplish the same thing.  They all hide their code, and work is wasted.  By forcing disclosure of code modifications, that duplicate work is eliminated.
 
-On the other hand, when that disclosed code can be used for free by competitors, a tragedy of the commons arises, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a tragedy of the commons can be avoided.
+On the other hand, when that disclosed code can be used for free by competitors, a free-rider problem arises, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a free-rider problem can be avoided.
 
 ### Costs money
 
@@ -98,7 +107,7 @@ This is one of the more business-friendly ways of selling software.  It works, b
 
 Exactly like its name implies, the Royalty Off Revenue license allows anyone to use the licensed software as long as they give the developer a percentage of the revenue earned from its use.
 
-It also defines how contributors to a project under the license can add their own royalties, offering an incentive to contribute (explained in [Appendix A](#appendix-a-the-math)).
+It also defines how contributors to a project under the license can add their own royalties, offering an incentive to contribute (explained in the math section below).
 
 Code under the license that is modified must be disclosed.
 
@@ -106,19 +115,129 @@ The percentage of revenue to be paid is defined by the developer within the lice
 
 Overall, the license is intended to be largely similar to the LGPL, with the exception of the royalties.
 
-The specific behavior we want out of the license:
+### The specific behavior we want out of the license:
 
-- If someone modifies your code, they need to make that modified code available (similar to the lgpl)
-- If someone makes money by using or selling your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within the license
+- If someone modifies your code, they need to make that modified code available (similar to the LGPL)
+- If someone makes money by using your code, they need to give you a fraction of their revenue, with that fraction of revenue being defined by the developer within the license
   - Running your code to gain revenue -> pay royalty on that revenue
-  - Selling something containing your code -> pay royalty on sale revenue
+  - End user buys application that uses your code, and uses that application to make money -> that end user pays royalties
+      - (This also incentivizes tools such as editors and compilers)
+  - End user buys a robot that is running the library somewhere inside, and makes money by using the robot -> royalty on revenue fom use of the robot, not from the sale
+      - (The hardware could easily be configured to not contain ROR-licensed code at the time of sale, and then download it on first startup, so royalties off sale is not feasible)
 - If someone modifies your code, they may add their own royalties on top of the existing ones
   - They may NOT remove existing royalties
-  - Adding royalties is the ONLY change they may make to the license
+  - Adding royalties is the ONLY change they may make to the license (TODO: split into an adjacent royalty-tracker file)
+  - (As an incentive for them to make your code better)
 - The code needs to not cost any money for people who don't use the software to make money
-- If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the lgpl
+  - "Beer free"
+  - No revenue ==> no royalty payment
+- If all creators of a piece of software don't add required royalties to the license, this license should be more or less equivalent to the LGPL
 - If all users of a piece of software don't get any revenue, this license should be more or less equivalent to the LGPL
 - Each contributor to a project should be able to lower their own previously added royalty if they want to.
 - Each contributor to a project should be able to raise their own previously added royalty if they want to, though users will still be able to use the lower price from the previous version
 
-TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use or sell licensed software.
+TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use licensed software.
+
+### Example use cases:
+
+#### Simple cases
+
+(1) User A *uses* ROR-licensed software and gains revenue from that use
+  - ==> Royalty payment on that revenue
+  - eg. software as a service:  non-zero revenue ==> non-zero royalty
+  - eg. a video game:  zero revenue ==> zero royalty
+
+(2) User A makes Thing B by *using* ROR-licensed software, and sells it
+  - eg. 3D-printing something by using ROR-licensed software
+  - eg. writing code with an ROR-licensed editor and selling the results
+  - ==> Royalty payment on revenue from sale
+
+(3) User A makes Thing B that *contains* ROR-licensed software and sells it
+  - eg. A software or device that includes an ROR-licensed library
+  - Note that User A could have easily made Thing B not contain ROR-licensed software at time of sale, but download it on first startup
+  - ==> No royalty payment
+
+(4) User A makes Thing B, *applies* the ROR-license to it, and sells it
+  - Note that in this scenario, User A has made Thing B from scratch, and the only royalties are payable to User A
+  - ==> No royalty payment
+
+
+#### Combinations of simple cases
+
+
+User A makes Thing B that *contains* ROR-licensed software and *gives* it (no revenue) to User C, who then uses it *without* gaining revenue
+  - Simple case (3) applies to User A. ==>  No royalty payment from User A
+  - Simple case (1) applies to User C. ==>  No royalty payment from User C
+
+User A makes Thing B that *contains* ROR-licensed software and *gives* it (no revenue) to User C, who then *does* gain revenue by using it
+  - Simple case (3) applies to User A. ==>  No royalty payment from User A
+  - Simple case (1) applies to User C. ==>  User C pays royalties off of revenue gained by using Thing B
+
+User A makes Thing B that *contains* licensed software and *sells* it to User C, who then uses it *without* gaining revenue
+  - Simple case (3) applies to User A. ==>  No royalty payment from User A
+  - Simple case (1) applies to User C. ==>  User C pays royalty for revenue gained by using Thing B
+
+User A makes Thing B *using* ROR-licensed software. Thing B also *contains* ROR-licensed software, and User A *applies* additional royalties to it (through the ROR license's mechanism for doing so).  User A then *sells* Thing B to User C, and User C *gains revenue* by *using* Thing B.
+  - Simple cases (2), (3), and (4) apply to the initial sale of Thing B. ==> User A pays royalties off the sale revenue for the *use* of ROR-licensed software in the creation of Thing B.
+  - Simple case (1) applies to User C. ==> User C pays royalties for revenue gained by using Thing B. Specifically to User A for the applied royalties, and to whoever gains royalties for the ROR-licensed software contained in Thing B
+
+----
+
+The basic idea here is that I took the LGPL V2.1 and more or less slapped a term on it that essentially says "If you use this software to make money, you owe the creator x% off the revenue".
+
+Percentage of revenue means:
+
+ - It's effectively free for students, researchers, and pre-revenue startups.
+ - There is a direct financial incentive for the software creator to want the software user to make more money.  The alternative is a one time license fee, which would incentivize the software to "look shiny", but have no direct motivation for actual usefulness.
+ - It's not profit based, so the royalties are not vulnerable to things like "hollywood accounting"
+
+This license is "fire and forget", just slap it on uploaded code and you're done.
+
+If a library with this license includes another library with this license, the percentages add up through the inclusion tree (watch out for this going over 100%).  If you include two libraries, and each of those include the same version of a third one, you only need to pay royalties to the third one once, not once per library that uses it.  This means that each additional library you include in something will progressively cost less as you include more.  Note that you pay royalties to every library in the tree directly, not in a chain of middlemen through the tree.
+
+If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
+
+In the future maybe:
+
+ - Something for Software As A Service, like the Affero GPL.  Because making better websites is good.
+ - Explicitly allow static linking, to allow for better optimizations
+ - Expand more on the use case of tools such as editors and compilers, to incentivize their development.
+
+----
+
+
+### The Math, and why it needs to be there
+
+If a project has one contributor (called "A") who values their contribution at 10% of revenue, users of the project don't actually pay 10% of their revenue.  They instead pay
+
+0.1 / (1 + 0.1) = 0.090909...  (9.1%)
+
+This division exists to reflect the fact that using the project increases revenue.
+
+If contributor "B" comes along and adds another 10%, the total royalty becomes
+
+0.2 / (1 + 0.2) = 0.16666...  (16.7%)   rather than 20%.
+
+With 0.1 / (1 + 0.2) = 0.0833333...   (8.3%) paid to each of contributors A and B.
+
+
+The reason for this is that by the time we get to contributor Z, with 26 different contributors, each adding 10% of value to the original revenue stream, if the royalties were simply added together, the project would cost 260% of revenue.  And despite the project adding a claimed 260% to revenue, the math works out for the project to be completely unusable by anyone that wants to make any sort of profit.
+
+On the other hand, if we use the other math above, the total royalties come out to
+
+2.6 / (1 + 2.6) = 0.72222... (72.2%)
+
+Which is high, but not impossible.  Especially if the project actually increases revenue by 260%, making the business break even.
+
+
+So, the fractions that each contributor chooses as the value as their contribution is a "nominal royalty", in relation to revenue BEFORE the value of the project is added.
+
+The actual royalty paid is
+
+Sum / (1 + Sum), where "Sum" is the sum of nominal royalties for each contributor
+
+with x / (1 + Sum) paid to contibutor X (who in this case adds x as their nominal royalty fraction).
+
+
+In the future, it may be necessary to add a multiplier to the Sum that can be adjusted by the project owner for market reasons.
+
