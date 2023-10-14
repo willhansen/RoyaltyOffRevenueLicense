@@ -94,7 +94,7 @@ There is a lot of freedom in defining the proprietary license, which can be good
 
 Totally excludes commercial use.  Unthinkable for businesses.
 
-### Permissive licenses (MIT, Apache 2.0, etc.)
+### Permissive licenses (BSD, MIT, Apache, etc.)
 
 Free to use, and you can hide any modifications to the code.  This is the kind of license businesses like to see in the libraries they use, but the lack of benefits for the library developer or forced recontribution means the quality is often left wanting.
 
