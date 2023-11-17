@@ -30,9 +30,9 @@ These people tend to have small budgets, and want their software usable and free
 
 ## Desirable license features
 
-### Open source
+### Source availability
 
-By which, we mean anyone can see the source code, not necessarily free to use ("Free Software" here refers to that).
+By which, we mean anyone can see the source code, not necessarily having zero cost, or no restrictions on use.
 
 If someone can read, compile, and run the code, all on their local machine, they can trust that they know what they're running.  It's well established that open source code is generally more secure than closed source code.
 
@@ -201,6 +201,14 @@ If a library with this license includes another library with this license, the p
 
 If someone forks a library with this license, they can't change the original royalty, but they can add another one.  I am imagining pull requests could involve granting rights to modify the new royalty for market reasons given certain legal obligations (eventually).
 
+
+---
+
+Frequently asked questions:
+
+Q. If you're restricting the freedom of users of the licensed software, it's not really Open Source Software™, is it?
+
+A. The problem we're trying to solve is that too many businesses are taking advantage of "the freedom to take your work, make buckets of money off it, and not give you a cent".  Restricting that freedom is the only solution to that problem I've come across.
 
 ---
 
