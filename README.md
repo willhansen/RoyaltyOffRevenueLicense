@@ -14,9 +14,9 @@ Generally, there is currently no easy way to take advantage of the specializatio
 
 ## Perspectives we care about
 
-### Library developers
+### Open source developers
 
-Library developers are making tools to fill needs.  They tend to work on their projects in their spare time, rather than for money as a job.
+Open source developers are making tools to fill needs.  They tend to work on their projects in their spare time, rather than for money as a job.
 
 ### Businesses
 
@@ -32,7 +32,7 @@ These people tend to have small budgets, and want their software usable and free
 
 ### Source availability
 
-By which, we mean anyone can see the source code, not necessarily having zero cost, or no restrictions on use.
+Meaning anyone can see the source code, not necessarily having zero cost or having no restrictions on use.
 
 If someone can read, compile, and run the code, all on their local machine, they can trust that they know what they're running.  It's well established that open source code is generally more secure than closed source code.
 
@@ -60,7 +60,7 @@ The least "fun" parts of making a library, such as testing, documentation, and l
 
 This provides a direct incentive for library developers to make libraries better for businessess.  Beyond just attracting new users and being better than the next option, this directly incentivizes improvements for existing users too.  The more money the users make, the more money the developer makes.  It's win-win.
 
-This has the side benefit of being free for people who don't make money off the use of the library, such as students, hobbyists, and pre-revenue startups.  All have shoe-string budgets, and potential for revenue in the future.
+This also has the benefit of being free for people who don't make money off the use of the library, such as students, hobbyists, and pre-revenue startups.  Most have shoe-string budgets, and potential for revenue in the future.
 
 #### Cost is proportional to revenue (rather than profit)
 
@@ -84,11 +84,6 @@ There are really two main questions to consider for each of these options:
 
 Free to use, and you need to recontribute changes made to the code.  This is bad for business owners to apply to their code, because then anyone can use the code without giving them money for it.  LGPL licensed libraries are good to use, because they're free and the license is limited to the library, but the GPL and AGPL are more virulent, and would affect the rest of the codebase.
 
-### Dual licensing
-
-GPL unless you pay for a proprietary license, this option offers a path to monetization for library developers and is free if you don't mind the GPL license, but typically allows proprietary license holders to hide their code and requires negotiation for each license.
-
-There is a lot of freedom in defining the proprietary license, which can be good for businesses, but is more overhead for lone developers.
 
 ### Creative Commons (non-commercial)
 
@@ -98,6 +93,19 @@ Totally excludes commercial use.  Unthinkable for businesses.
 
 Free to use, and you can hide any modifications to the code.  This is the kind of license businesses like to see in the libraries they use, but the lack of benefits for the library developer or forced recontribution means the quality is often left wanting.
 
+### Dual licensing
+
+There are several forms:
+
+* GPL unless you pay for a proprietary license
+* Proprietary until some date, then becomes open source automatically
+* TODO
+
+This option offers a path to monetization for library developers and is free if you don't mind the GPL license, but typically allows proprietary license holders to hide their code and requires negotiation for each license.
+
+There is a lot of freedom in defining the proprietary license, which can be good for businesses, but is more overhead for lone developers.
+
+#### 
 
 ### Software as a service
 
@@ -159,7 +167,7 @@ TL;DR: Like the LGPL, but you have to pay a percentage of your revenue to use li
 (3) User A makes Thing B that *contains* ROR-licensed software and sells it
   - ==> No royalty payment
   - eg. A software or device that includes an ROR-licensed library
-  - Note that User A could have easily made Thing B not contain ROR-licensed software at time of sale, but download it on first startup
+  - Note that User A can easily make Thing B not contain ROR-licensed software at time of sale, but download it on first startup
 
 (4) User A makes Thing B, *applies* the ROR-license to it, and sells it
   - Note that in this scenario, User A has made Thing B from scratch, and the only royalties are payable to User A
@@ -179,6 +187,10 @@ User A makes Thing B that *contains* ROR-licensed software and *gives* it (no re
 
 User A makes Thing B that *contains* licensed software and *sells* it to User C, who then uses it *without* gaining revenue
   - Simple case (3) applies to User A. ==>  No royalty payment from User A
+  - Simple case (1) applies to User C. ==>  User C pays royalty for revenue gained by using Thing B (both 0 in this case)
+
+User A makes Thing B, *applies* the ROR-license to it, and *sells* it to User C, who then *gains revenue by using it*
+  - Simple case (4) applies to User A. ==>  No royalty payment from User A
   - Simple case (1) applies to User C. ==>  User C pays royalty for revenue gained by using Thing B
 
 User A makes Thing B *using* ROR-licensed software. Thing B also *contains* ROR-licensed software, and User A *applies* additional royalties to it (through the ROR license's mechanism for doing so).  User A then *sells* Thing B to User C, and User C *gains revenue* by *using* Thing B.
