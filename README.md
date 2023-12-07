@@ -1,12 +1,12 @@
-# The Royalty Off Revenue License
+# About the Royalty Off Revenue License
 
 ## Intro
 
-The motivation for this license is that "freedom free" is good, but "beer free" is not, because economic incentives get things done.
+The motivation for this license is that software being source-available and forkable is good, but being $0-to-use is not, because economic incentives get things done.
 
-Whenever a robotics company tries to make a robot, they can write all the code from scratch, or lean on the work of volunteers in the form of open source software.  This is not working well.  The systems are too complex for one company to do everything, and volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
+Whenever a software company wants to make a new software, they can write all the code from scratch (expensive/impossible), lean on the work of volunteers in the form of open source software (potentially unreliable), buy licenses for tools and frameworks (expensive), or rely on software-as-a-service services (expensive / potentially unreliable).  This is not working well.  The systems are too complex for one company to do everything, and volunteers tend to primarily focus on the core moving parts of software, often paying less attention to less interesting, but high value, parts, such as documentation, unit tests, ease of use, and interaction with other programs.  There are exceptions to this, but they are the best of the best, where instead it could be run of the mill.
 
-The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't just slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a tragedy of the commons scenario where everyone gets just the same benefit no matter who puts in the work.
+The core problem is that existing software licenses provide no direct incentives to improve existing software or create software to fill a need.  If I have a cool idea for a software library that could save a lot of people a lot of time just by coding it up and posting it on Github, I can't just slap an existing license on it and "let the cash roll in".  If I find room for improvement in an existing open source library, there is a free-rider scenario where everyone gets just the same benefit no matter who puts in the work.
 
 Generally, there is currently no easy way to take advantage of the specialization and massive economies of scale that software is naturally suited for (software should have ALL of the economies of scale).
 
@@ -16,43 +16,45 @@ Generally, there is currently no easy way to take advantage of the specializatio
 
 ### Open source developers
 
-Open source developers are making tools to fill needs.  They tend to work on their projects in their spare time, rather than for money as a job.
+Open source developers are making tools to fill needs.  They tend to work on their projects in their spare time, rather than for money as a job.  Many would do so full-time if they could.
 
 ### Businesses
 
-Businesses want their tools to be easy to use as well as well tested, documented, and supported.  Also cheap, but sometimes you have to spend money to make money.
+Businesses want their tools to be easy to use, well tested, documented, and supported.  Also cheap, but sometimes "you have to spend money to make money".
 
 ### Personal use / Pre-revenue startups
 
-These people tend to have small budgets, and want their software usable and free.
+These people tend to have smaller budgets than businesses, and want the software they use to be basically functional.
 
 ---
 
 ## Desirable license features
 
-### Source availability
+### Source-availability
 
-Meaning anyone can see the source code, not necessarily having zero cost or having no restrictions on use.
+Meaning anyone can see the source code, not necessarily being $0-to-use or having no restrictions on use.
 
 If someone can read, compile, and run the code, all on their local machine, they can trust that they know what they're running.  It's well established that open source code is generally more secure than closed source code.
 
-### Anyone can contribute
+### Anyone can contribute or fork a project
 
 With open source code, anyone can code up improvements to a library or application.  One of the great strengths of Free Software projects is that those people can easily contribute back to the project with a fork or pull request.
+
+Additionally, if a lone project owner starts going "off the rails", the community can fork a project and keep going.
 
 ### Modifications to the code must be disclosed
 
 There is a lot of duplicated work done by multiple companies trying to accomplish the same thing.  They all hide their code, and work is wasted.  By forcing disclosure of code modifications, that duplicate work is eliminated.
 
-On the other hand, when that disclosed code can be used for free by competitors, a free-rider problem arises, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a free-rider problem can be avoided.
+On the other hand, when that disclosed code can be used for free by competitors, a free-rider problem emerges, where everyone but the first person to put in the work gets all the benefit for free.  There needs to be a way to put a price tag on the disclosed code, so both duplicate work and a free-rider problem can be avoided.
 
 ### Costs money
 
-"But wait", you say, "isn't free good?"
+"But wait", you say, "isn't $0-to-use good?"
 
-There is no such thing as a free lunch.  If a developer isn't getting paid for their work, they have no incentive to make their software useful for money-making applications, no incentive to spend time on the boring parts like documentation and unit tests, and no incentive to keep supporting the project for a long period of time.
+"There is no such thing as a free lunch".  If a developer isn't getting paid for their work, they have no incentive to make their software useful for money-making applications, no incentive to spend time on the "boring" parts like documentation and tests, and no incentive to keep supporting the project for a long period of time.
 
-The greatest weakness of Free Software licenses is that, while it is possible for anyone to improve a project themselves, they would need to do so for free.  Those that live by the phrase "if you're good at something, never do it for free" generally don't donate their time to the project.  Work has value.
+The greatest weakness of existing Open Source Software licenses is that, while it is possible for anyone to improve a project themselves, they would need to do so for free.  Those that live by the phrase "if you're good at something, never do it for free" generally don't donate their time to the project.  Work has value.
 
 The least "fun" parts of making a library, such as testing, documentation, and long-term support, are often the most neglected, while also being some of the most valuable.
 
