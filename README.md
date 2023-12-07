@@ -1,4 +1,4 @@
-# About the Royalty Off Revenue License (draft)
+# About the Royalty Off Revenue License (Rough Draft)
 
 ## Intro
 
