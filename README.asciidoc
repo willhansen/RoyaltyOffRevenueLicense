@@ -1,4 +1,5 @@
 == About the Royalty Off Revenue License
+:stem: latexmath
 
 === Intro
 
@@ -141,7 +142,9 @@ users make, the more money the contributors make. It’s win-win.
 
 This also has the benefit of being free for people who don’t make money
 off the use of the library, such as students, hobbyists, and pre-revenue
-startups. #### Royalties are proportional to revenue (rather than
+startups. 
+
+===== Royalties are proportional to revenue (rather than
 profit)
 
 Profit can be easily manipulated by tricky accounting (like hollywood
@@ -272,7 +275,7 @@ project clearly could be just as valuable. +
 If 5 more contributors come along and each add the same amount of value
 to the project, the math doesn’t work out to give all 6 contributors 20%
 of the royalties, and giving each contributor
-latexmath:[$\frac{100\%}{6}=16.7\%$] of the royalties lowers the first
+stem:[\frac{100\%}{6} = 16.7\%] of the royalties lowers the first
 contributor’s share, which is also non-viable.
 
 The solution to this question is to split the royalties six ways equally
@@ -302,7 +305,7 @@ this:
 Another contributor adding the same amount of value to the project would
 just add another row to the table and raise the total royalty by 20% to
 8.4% (from
-latexmath:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%$])
+stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%$])
 
 [cols="^,^",options="header",]
 |===
@@ -318,8 +321,8 @@ latexmath:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5}
 *Total royalty cost 8.4%
 
 While this should leave all contributors happy, as they were each
-getting latexmath:[$20/100 * 7\% = 1.4\%$] of revenue as royalties
-before, and latexmath:[$20/120 * 8.4\% = 1.4\%$] of revenue as royalties
+getting stem:[$20/100 * 7\% = 1.4\%$] of revenue as royalties
+before, and stem:[$20/120 * 8.4\% = 1.4\%$] of revenue as royalties
 after, there is clearly an effect on the user of the licensed software,
 who sees their cost go up 20%.
 
@@ -333,7 +336,7 @@ the new feature cut out, and undercut the price of the main project
 (assuming there are others who also don’t need/want that feature).
 
 There is still a problem, though. The royalty percentage does not have a
-cap. The latexmath:[$\frac{\text{shares after}}{\text{shares before}}$]
+cap. The stem:[$\frac{\text{shares after}}{\text{shares before}}$]
 ratio can become arbitrarily large, and cause the total royalty cost to
 grow to and beyond 100%. The end user can be squeezed out, despite doing
 work to bring in revenue themselves.
@@ -368,7 +371,7 @@ And add "just" sixty-seven more equal contributors:
 
 *Total royalty cost: 100.8%
 
-latexmath:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \Rightarrow 14.4 * 7\% = 100.8\%$]
+stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \\\Rightarrow 14.4 * 7\% = 100.8\%$]
 
 Using the project costs more than 100% of revenue, and the end user gets
 no revenue themselves, even needing to pay more money than the revenue
@@ -378,7 +381,7 @@ valuable work they should be getting money for.
 
 So we add a line of shares for them:
 
-[latexmath]
+[stem]
 ++++
 \[\text{end user shares} = \frac{\text{sum of contributor shares}}{\text{target royalty cost}} * (100\% - \text{target royalty cost}) = \frac{100}{7\%} * 93\% = 1328.5714\]
 ++++
@@ -408,7 +411,7 @@ ____
 
 Then when we add a new contributor, the formula for total royalty cost
 becomes
-latexmath:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%$]
+stem:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%$]
 
 [cols="^,^",options="header",]
 |===
@@ -426,13 +429,13 @@ latexmath:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = 
 *Total royalty cost: ~52%
 
 With each contributor individually getting
-latexmath:[$\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%$]
+stem:[$\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%$]
 of revenue
 
 At this point, you may notice that each contributor’s fraction of
 revenue just went down. This makes sense if you consider the revenue
 before the contributions and after the contributions as two different
-values latexmath:[$R_1$] and latexmath:[$R_2$], with latexmath:[$R_2$]
+values stem:[$R_1$] and stem:[$R_2$], with stem:[$R_2$]
 being larger due to the value increase of the project allowing the end
 user to bring in more revenue.
 
@@ -441,13 +444,13 @@ amount of money before and after the later contributions. (Again note
 that these calculations must be done with the numbers of shares, as the
 percentage values are approximate)
 
-[latexmath]
+[stem]
 ++++
 \[\frac{\text{contributor's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{contributor's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{20} * 2769}{\cancel{20} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
 ++++
 The same goes for the end user:
 
-[latexmath]
+[stem]
 ++++
 \[\frac{\text{end user's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{end user's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{1329} * 2769}{\cancel{1329} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
 ++++
@@ -456,9 +459,9 @@ If the contributions make the revenue go up by a factor of ~1.94, the
 math works out.
 
 If shares accurately represent value, then the
-latexmath:[$\frac{\text{shares after}}{\text{shares before}}$] ratio
+stem:[$\frac{\text{shares after}}{\text{shares before}}$] ratio
 should also reflect the same rise in revenue. We get
-latexmath:[$\frac{\text{shares after}}{\text{shares before}} = \frac{2769}{1429} = \boxed{{\sim}1.94}$],
+stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{2769}{1429} = \boxed{{\sim}1.94}$],
 so no one is seeing any change in income due to later contributions (so
 long as each next contributor gets the appropriate number of shares for
 the value of their work).
@@ -554,7 +557,7 @@ user shares match by multiplying each column by a constant.
 |End User |180
 |===
 
-*Total royalty cost: latexmath:[$\frac{140}{320}={\sim}44\%$]
+*Total royalty cost: stem:[$\frac{140}{320}={\sim}44\%$]
 
 === Current licensing options
 
