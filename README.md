@@ -480,8 +480,6 @@ User A makes Thing B *using* ROR-licensed software. Thing B also *contains* ROR-
   - Simple cases (2), (3), and (4) apply to the initial sale of Thing B. ==> User A pays royalties off the sale revenue for the *use* of ROR-licensed software in the creation of Thing B.
   - Simple case (1) applies to User C. ==> User C pays royalties for revenue gained by using Thing B. Specifically to User A for the applied royalties, and to whoever gains royalties for the ROR-licensed software contained in Thing B
 
----
-
 ## Frequently Asked Questions:
 
 ### Q. If you're restricting the freedom of users of the licensed software, it's not really Open Source Software™, is it?
@@ -491,3 +489,9 @@ A. The problem we're trying to solve is that too many businesses are taking adva
 ### Q. If we inform businesses that they need to voluntarily contribute to our open source projects to maintain the system for their own long-term benefit, surely they'll do the right thing?
 
 A. How's that strategy been working out with taxes / global warming / this exact thing?
+
+## Next steps:
+
+1. Get feedback on this document
+2. Create a rough draft of the license itself
+  - As I am not a lawyer, I can only assume that if I write it myself, it will be wrong
