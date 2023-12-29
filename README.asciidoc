@@ -22,7 +22,7 @@ The core problem is that existing software licenses provide no direct
 incentives to improve existing software or create software to fill a
 need. If I have a cool idea for a software library that could save a lot
 of people a lot of time just by coding it up and posting it on Github, I
-can’t just slap an existing license on it and ``let the cash roll in''.
+can’t just slap an existing license on it and "let the cash roll in".
 If I find room for improvement in an existing open source library, there
 is a free-rider scenario where everyone gets just the same benefit no
 matter who puts in the work.
@@ -42,8 +42,8 @@ Many would do so full-time if they could.
 ==== Businesses
 
 Businesses want their tools to be easy to use, well tested, documented,
-and supported. Also cheap, but sometimes ``you have to spend money to
-make money''.
+and supported. Also cheap, but sometimes "you have to spend money to
+make money".
 
 ==== Personal use
 
@@ -73,7 +73,7 @@ application. One of the great strengths of Open Source Software projects
 is that those people can easily contribute back to the project with a
 fork or pull request.
 
-Additionally, if a lone project owner starts going ``off the rails'',
+Additionally, if a lone project owner starts going "off the rails",
 the community can fork a project and keep going.
 
 ==== Modifications to the code must be disclosed
@@ -109,21 +109,21 @@ and AGPL.
 
 ==== Costs money
 
-``But wait'', you say, ``isn’t $0-to-use good?''
+"But wait", you say, "isn't $0-to-use good?"
 
-``There is no such thing as a free lunch''. If a developer or business
+"There is no such thing as a free lunch". If a developer or business
 isn’t getting paid for their work, they have no incentive to make their
 software useful for money-making applications, no incentive to spend
-time on the ``boring'' parts like documentation and tests, and no
+time on the "boring" parts like documentation and tests, and no
 incentive to keep supporting the project for a long period of time.
 
 The greatest weakness of existing Open Source Software licenses is that,
 while it is possible for anyone to improve a project themselves, they
-would need to do so for free. Those that live by the phrase ``if you’re
-good at something, never do it for free'' generally don’t donate their
+would need to do so for free. Those that live by the phrase "if you’re
+good at something, never do it for free" generally don’t donate their
 time to the project. Work has value.
 
-The least ``fun'' parts of making a library, such as testing,
+The least "fun" parts of making a library, such as testing,
 documentation, and long-term support, are often the most neglected,
 while also being some of the most valuable.
 
@@ -237,7 +237,7 @@ code would allow everything to be synced up together.
 
 ==== Easy to apply to a new project
 
-This license should be ``fire and forget''. Just set the price, slap it
+This license should be "fire and forget". Just set the price, slap it
 on uploaded code, and you’re done.
 
 === Consequences of these goals
@@ -260,7 +260,7 @@ the same time 6. Easy to apply to a new project ### Royalty distribution
 table location Goal 5.4 means the the royalty distribution needs to be
 written down. This, combined with 5.9, suggests that a top-level text
 file in a project directory could work. Possibly some variety of table
-or csv with ``Name'', ``Email'', and ``Fraction of Royalties'' columns.
+or csv with "Name", "Email", and "Fraction of Royalties" columns.
 
 ==== Adding value to a project, and how that added value is distributed
 
@@ -352,7 +352,7 @@ If we start here:
 
 *Total royalty cost: 7%
 
-And add ``just'' sixty-seven more equal contributors:
+And add "just" sixty-seven more equal contributors:
 
 [cols="^,^",options="header",]
 |===
@@ -383,8 +383,8 @@ So we add a line of shares for them:
 \[\text{end user shares} = \frac{\text{sum of contributor shares}}{\text{target royalty cost}} * (100\% - \text{target royalty cost}) = \frac{100}{7\%} * 93\% = 1328.5714\]
 ++++
 Round to 1329 shares. Note that the fact that this is rounded means all
-calculations must be done from the number of shares. The final ``total
-royalty cost'' is imprecise (6.997901…% rather than 7%).
+calculations must be done from the number of shares. The final "total
+royalty cost" is imprecise (6.997901…% rather than 7%).
 
 [cols="^,^",options="header",]
 |===
@@ -401,9 +401,9 @@ royalty cost'' is imprecise (6.997901…% rather than 7%).
 *Total royalty cost: ~7%
 
 ____
-[!note] The ``End User'' name is not replaced with an actual name when
-this table is placed in a real project. It is a stand-in for ``Whoever
-uses this project under this license''.
+[!note] The "End User" name is not replaced with an actual name when
+this table is placed in a real project. It is a stand-in for "Whoever
+uses this project under this license".
 ____
 
 Then when we add a new contributor, the formula for total royalty cost
@@ -470,7 +470,7 @@ concerned (assuming both the base and sub-projects are under this
 license). +
 - A fork is putting a code change and associated royalty addition on top
 of a base project - A merge request is presenting an offer to the base
-project. ``These code changes, for this royalty addition''. - Including
+project. "These code changes, for this royalty addition". - Including
 a sub-project (eg a library) in a base project is the base project
 accepting the offer that the sub-project made to everyone by being
 published. The inclusion similarly changes code, and adds an associated
@@ -605,7 +605,7 @@ This is one of the more business-friendly ways of selling software. It
 works, but it’s not a good solution if you care about latency, security,
 or have an inconsistent internet connection.
 
-'''''
+'''
 
 === Proposed solution: The Royalty Off Revenue license
 
@@ -625,10 +625,10 @@ Overall, the license is intended to be largely similar to the LGPL, with
 the exception of the royalties. Ideally implemented as a modifier to a
 given existing license, similar to a dual license.
 
-Something along the lines of: ``This license is the LGPL license, but
+Something along the lines of: "This license is the LGPL license, but
 with the additional condition that you need to pay a percentage of your
 total annual revenue to the contributors of this project with as defined
-in the included `royalty_distribution_table.csv` file.''
+in the included `royalty_distribution_table.csv` file.""
 
 ____
 [!Caution] Disclaimer I am not a lawyer.
@@ -675,7 +675,7 @@ owner may not accept this change, requiring a fork.
 TL;DR: Like the LGPL, but you have to pay a percentage of your revenue
 to use licensed software.
 
-'''''
+'''
 
 ==== Example use cases:
 
@@ -752,8 +752,8 @@ B
 ==== Q. If you’re restricting the freedom of users of the licensed software, it’s not really Open Source Software™, is it?
 
 A. The problem we’re trying to solve is that too many businesses are
-taking advantage of ``the freedom to take your work, make buckets of
-money off it, and not give you a cent''. Restricting that freedom is the
+taking advantage of "the freedom to take your work, make buckets of
+money off it, and not give you a cent". Restricting that freedom is the
 only solution to that problem I’ve come across.
 
 ==== Q. If we inform businesses that they need to voluntarily contribute to our open source projects to maintain the system for their own long-term benefit, surely they’ll do the right thing?
