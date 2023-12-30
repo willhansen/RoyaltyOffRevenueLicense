@@ -1,6 +1,7 @@
 = About the Royalty Off Revenue License (Rough Draft)
 :stem: latexmath
 :sectanchors:
+// :icons: font
 
 == Intro
 
@@ -58,7 +59,7 @@ Large overlap in use case with businesses, but with much less budget.
 
 == License goals
 
-=== Source-available
+=== Source-available [[see-source]]
 
 Meaning anyone can see the source code, not necessarily being $0-to-use
 or having no restrictions on use.
@@ -68,7 +69,7 @@ machine, they can trust that they know what they’re running. It’s well
 established that open source code is generally more secure than closed
 source code.
 
-=== Anyone can contribute to or fork a project
+=== Anyone can contribute to or fork a project [[any-can-contrib]]
 
 With open source code, anyone can code up improvements to a library or
 application. One of the great strengths of Open Source Software projects
@@ -78,14 +79,14 @@ fork or pull request.
 Additionally, if a lone project owner starts going "off the rails",
 the community can fork a project and keep going.
 
-=== Modifications to the code must be disclosed
+=== Modifications to the code must be disclosed [[disclose-code]]
 
 There is a lot of duplicate work done by multiple companies trying to
 accomplish the same thing. They all hide their code, and work is wasted.
 By forcing disclosure of code modifications, that duplicate work is
 eliminated.
 
-==== No software-as-a-service loophole for disclosure
+==== No software-as-a-service loophole for disclosure [[no-saas-loophole]]
 
 Some licenses (like the GPL and LGPL) only require source code to be
 disclosed if the final binaries are distributed, allowing someone to run
@@ -93,7 +94,7 @@ the binary on a private server on external data, and not have to
 disclose a thing. Other licenses such as the AGPL and SSPL avoid this
 problem.
 
-=== Easy to include in another project
+=== Easy to include in another project [[easy-include]]
 
 Another strength of Open Source Software licenses is that having all the
 conditions of use clearly shown in the license allows potential library
@@ -109,7 +110,7 @@ only requires changes to a covered library to be published, rather than
 the code of an entire project that includes the library, like the GPL
 and AGPL.
 
-=== Costs money
+=== Costs money [[costs-money]]
 
 "But wait", you say, "isn't $0-to-use good?"
 
@@ -132,7 +133,7 @@ while also being some of the most valuable.
 Also, businesses don’t want to hand valuable work to their competitors
 for free.
 
-==== Cost is proportional to money gained from its use (i.e. royalties)
+==== Cost is proportional to money gained from its use (i.e. royalties) [[is-royalty]]
 
 This provides a direct incentive for software contributors to make
 software better for businesses. Beyond just attracting new users (as
@@ -145,13 +146,12 @@ This also has the benefit of being free for people who don’t make money
 off the use of the library, such as students, hobbyists, and pre-revenue
 startups. 
 
-==== Royalties are proportional to revenue (rather than
-profit)
+==== Royalties are proportional to revenue (rather than profit) [[revenue-based]]
 
 Profit can be easily manipulated by tricky accounting (like hollywood
 accounting). Revenue is much less ambiguous.
 
-==== The revenue considered for royalties is total revenue, not just the gain in revenue from use of the software
+==== The revenue considered for royalties is total revenue, not just the gain in revenue from use of the software [[total-revenue-only]]
 
 I’m not 100% on this one. The motivating question here is whether a
 company can prove that their claimed gain in revenue is correct. My
@@ -187,17 +187,17 @@ a finer-grained timescale is better, but I don’t know how visible those
 revenue numbers are from outside a company. - Pays the same amount of
 royalties as company 1
 
-==== Royalty distribution between contributors is clearly defined
+==== Royalty distribution between contributors is clearly defined [[put-distribution-in-writing]]
 
 We’re dealing with money, so how that money is going to be distributed
 needs to be in writing.
 
-==== Royalty distribution between contributors can change as the codebase changes
+==== Royalty distribution between contributors can change as the codebase changes [[distribution-can-change]]
 
 People join and leave project teams all the time. The license needs to
 account for that.
 
-==== A contributor’s share of royalties cannot change without their approval
+==== A contributor’s share of royalties cannot change without their approval [[royalty-change-needs-approval]]
 
 Someone being able to remove a contributor’s share of royalties, without
 that contributor’s input, while the code that contributor wrote is still
@@ -212,7 +212,7 @@ from before that contributor made any contributions. - Using a later
 version of the project, with their code in it, should still give them
 royalties.
 
-==== Royalty distribution is consistent with sub-project inclusion
+==== Royalty distribution is consistent with sub-project inclusion [[inclusion-is-contribution]]
 
 Take two cases: 1. Developer A and developer B each contribute 50% of a
 project 2. Case 1 is slightly refactored so developer A has a project
@@ -221,7 +221,7 @@ essentially the same contributions by each developer, and any end user
 would not be able to tell the difference. So the royalty distribution
 should be the same between the two cases.
 
-==== A lone developer can set their royalty percentage to whatever they want
+==== A lone developer can set their royalty percentage to whatever they want [[custom-cost]]
 
 Whether a developer automates 5% or 95% of a process, the license should be
 able to accommodate.
@@ -234,12 +234,12 @@ If they set the royalty to 100% of revenue, no one can gain revenue by
 using their project. If they set the royalty to 0% of revenue, the
 project is effectively just $0-to-use for everyone.
 
-==== Changes to the code and changes to the royalty distribution happen at the same time
+==== Changes to the code and changes to the royalty distribution happen at the same time [[code-and-cost-change-together]]
 
 To keep things simple, storing the royalty distribution numbers with the
 code would allow everything to be synced up together.
 
-=== Easy to apply to a new project
+=== Easy to apply to a new project [[easy-to-apply]]
 
 This license should be "fire and forget". Just set the price, slap it
 on uploaded code, and you’re done.
@@ -250,32 +250,27 @@ Let’s list out and number the target features for easy reference (TODO:
 auto-link): 
 
 *Goals:*
-1. Source-available 
-2. Anyone can contribute to or
-fork a project 
-3. Modifications to the code must be disclosed 
-	1. No software-as-a-service loophole for disclosure 
-4. Easy to include in
-another project 
-5. Costs money 
-	1. Cost is proportional to money gained
-	from its use (i.e. royalties) 
-	2. Royalties are proportional to revenue
-	(rather than profit) 
-	3. The revenue considered for royalties is total
-	revenue, not just the gain in revenue from use of the software 
-	4. Royalty distribution between contributors is clearly defined 
-	5. Royalty distribution between contributors can change as the codebase changes 
-	6. A contributor’s share of royalties cannot change without their approval 
-	7. Royalty distribution is consistent with sub-project inclusion 
-	8. A lone developer can set their royalty percentage to whatever they want 
-	9. Changes to the code and changes to the royalty distribution happen at
-	the same time 
-6. Easy to apply to a new project 
+
+. <<see-source>>
+. <<any-can-contrib>>
+. <<disclose-code>>
+.. <<no-saas-loophole>>
+. <<easy-include>>
+. <<costs-money>>
+.. <<is-royalty>>
+.. <<revenue-based>>
+.. <<total-revenue-only>>
+.. <<put-distribution-in-writing>>
+.. Royalty distribution between contributors can change as the codebase changes 
+.. A contributor’s share of royalties cannot change without their approval 
+.. Royalty distribution is consistent with sub-project inclusion 
+.. A lone developer can set their royalty percentage to whatever they want 
+.. Changes to the code and changes to the royalty distribution happen at the same time 
+. Easy to apply to a new project 
 
 === Royalty distribution table location 
 
-Goal 5.4 means the the royalty distribution needs to be
+Goal [5d](<<see-source>>) means the the royalty distribution needs to be
 written down. This, combined with 5.9, suggests that a top-level text
 file in a project directory could work. Possibly some variety of table
 or csv with "Name", "Email", and "Fraction of Royalties" columns.
