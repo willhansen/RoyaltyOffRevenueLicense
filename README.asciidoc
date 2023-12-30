@@ -1,7 +1,8 @@
-== About the Royalty Off Revenue License
+= About the Royalty Off Revenue License (Rough Draft)
 :stem: latexmath
+:sectanchors:
 
-=== Intro
+== Intro
 
 The motivation for this license is that software being source-available
 and forkable is good, but being $0-to-use is not, because economic
@@ -32,32 +33,32 @@ Generally, there is currently no easy way to take advantage of the
 specialization and massive economies of scale that software is naturally
 suited for (software should have ALL of the economies of scale).
 
-=== Perspectives we care about
+== Perspectives we care about
 
-==== Open source developers
+=== Open source developers
 
 Open source developers are making tools to fill needs. They tend to work
 on their projects in their spare time, rather than for money as a job.
 Many would do so full-time if they could.
 
-==== Businesses
+=== Businesses
 
 Businesses want their tools to be easy to use, well tested, documented,
 and supported. Also cheap, but sometimes "you have to spend money to
 make money".
 
-==== Personal use
+=== Personal use
 
 These people tend to have smaller budgets than businesses, and want the
 software they use to be basically functional.
 
-==== Pre-revenue startups
+=== Pre-revenue startups
 
 Large overlap in use case with businesses, but with much less budget.
 
-=== License goals
+== License goals
 
-==== Source-available
+=== Source-available
 
 Meaning anyone can see the source code, not necessarily being $0-to-use
 or having no restrictions on use.
@@ -67,7 +68,7 @@ machine, they can trust that they know what they’re running. It’s well
 established that open source code is generally more secure than closed
 source code.
 
-==== Anyone can contribute to or fork a project
+=== Anyone can contribute to or fork a project
 
 With open source code, anyone can code up improvements to a library or
 application. One of the great strengths of Open Source Software projects
@@ -77,14 +78,14 @@ fork or pull request.
 Additionally, if a lone project owner starts going "off the rails",
 the community can fork a project and keep going.
 
-==== Modifications to the code must be disclosed
+=== Modifications to the code must be disclosed
 
 There is a lot of duplicate work done by multiple companies trying to
 accomplish the same thing. They all hide their code, and work is wasted.
 By forcing disclosure of code modifications, that duplicate work is
 eliminated.
 
-===== No software-as-a-service loophole for disclosure
+==== No software-as-a-service loophole for disclosure
 
 Some licenses (like the GPL and LGPL) only require source code to be
 disclosed if the final binaries are distributed, allowing someone to run
@@ -92,7 +93,7 @@ the binary on a private server on external data, and not have to
 disclose a thing. Other licenses such as the AGPL and SSPL avoid this
 problem.
 
-==== Easy to include in another project
+=== Easy to include in another project
 
 Another strength of Open Source Software licenses is that having all the
 conditions of use clearly shown in the license allows potential library
@@ -108,7 +109,7 @@ only requires changes to a covered library to be published, rather than
 the code of an entire project that includes the library, like the GPL
 and AGPL.
 
-==== Costs money
+=== Costs money
 
 "But wait", you say, "isn't $0-to-use good?"
 
@@ -131,7 +132,7 @@ while also being some of the most valuable.
 Also, businesses don’t want to hand valuable work to their competitors
 for free.
 
-===== Cost is proportional to money gained from its use (i.e. royalties)
+==== Cost is proportional to money gained from its use (i.e. royalties)
 
 This provides a direct incentive for software contributors to make
 software better for businesses. Beyond just attracting new users (as
@@ -144,20 +145,20 @@ This also has the benefit of being free for people who don’t make money
 off the use of the library, such as students, hobbyists, and pre-revenue
 startups. 
 
-===== Royalties are proportional to revenue (rather than
+==== Royalties are proportional to revenue (rather than
 profit)
 
 Profit can be easily manipulated by tricky accounting (like hollywood
 accounting). Revenue is much less ambiguous.
 
-===== The revenue considered for royalties is total revenue, not just the gain in revenue from use of the software
+==== The revenue considered for royalties is total revenue, not just the gain in revenue from use of the software
 
 I’m not 100% on this one. The motivating question here is whether a
 company can prove that their claimed gain in revenue is correct. My
 reasoning is that annual (or perhaps monthly?) total revenue numbers are
 much easier to get/calculate.
 
-====== Some example cases highlighting potential flaws in this approach:
+===== Some example cases highlighting potential flaws in this approach:
 
 Let’s say there are several companies using a video editor that is under
 the license. All of them gain the same amount of revenue throughout a
@@ -186,17 +187,17 @@ a finer-grained timescale is better, but I don’t know how visible those
 revenue numbers are from outside a company. - Pays the same amount of
 royalties as company 1
 
-===== Royalty distribution between contributors is clearly defined
+==== Royalty distribution between contributors is clearly defined
 
 We’re dealing with money, so how that money is going to be distributed
 needs to be in writing.
 
-===== Royalty distribution between contributors can change as the codebase changes
+==== Royalty distribution between contributors can change as the codebase changes
 
 People join and leave project teams all the time. The license needs to
 account for that.
 
-===== A contributor’s share of royalties cannot change without their approval
+==== A contributor’s share of royalties cannot change without their approval
 
 Someone being able to remove a contributor’s share of royalties, without
 that contributor’s input, while the code that contributor wrote is still
@@ -211,7 +212,7 @@ from before that contributor made any contributions. - Using a later
 version of the project, with their code in it, should still give them
 royalties.
 
-===== Royalty distribution is consistent with sub-project inclusion
+==== Royalty distribution is consistent with sub-project inclusion
 
 Take two cases: 1. Developer A and developer B each contribute 50% of a
 project 2. Case 1 is slightly refactored so developer A has a project
@@ -220,9 +221,9 @@ essentially the same contributions by each developer, and any end user
 would not be able to tell the difference. So the royalty distribution
 should be the same between the two cases.
 
-===== A lone developer can set their royalty percentage to whatever they want
+==== A lone developer can set their royalty percentage to whatever they want
 
-If a developer automates 5% or 95% of a process, the license should be
+Whether a developer automates 5% or 95% of a process, the license should be
 able to accommodate.
 
 the developer has an incentive to set the royalty percentage correctly,
@@ -233,39 +234,53 @@ If they set the royalty to 100% of revenue, no one can gain revenue by
 using their project. If they set the royalty to 0% of revenue, the
 project is effectively just $0-to-use for everyone.
 
-===== Changes to the code and changes to the royalty distribution happen at the same time
+==== Changes to the code and changes to the royalty distribution happen at the same time
 
 To keep things simple, storing the royalty distribution numbers with the
 code would allow everything to be synced up together.
 
-==== Easy to apply to a new project
+=== Easy to apply to a new project
 
 This license should be "fire and forget". Just set the price, slap it
 on uploaded code, and you’re done.
 
-=== Consequences of these goals
+== Consequences of these goals
 
 Let’s list out and number the target features for easy reference (TODO:
-auto-link): **Goals: 1. Source-available 2. Anyone can contribute to or
-fork a project 3. Modifications to the code must be disclosed 1. No
-software-as-a-service loophole for disclosure 4. Easy to include in
-another project 5. Costs money 1. Cost is proportional to money gained
-from its use (i.e. royalties) 2. Royalties are proportional to revenue
-(rather than profit) 3. The revenue considered for royalties is total
-revenue, not just the gain in revenue from use of the software 4.
-Royalty distribution between contributors is clearly defined 5. Royalty
-distribution between contributors can change as the codebase changes 6.
-A contributor’s share of royalties cannot change without their approval
-7. Royalty distribution is consistent with sub-project inclusion 8. A
-lone developer can set their royalty percentage to whatever they want 9.
-Changes to the code and changes to the royalty distribution happen at
-the same time 6. Easy to apply to a new project ### Royalty distribution
-table location Goal 5.4 means the the royalty distribution needs to be
+auto-link): 
+
+*Goals:*
+1. Source-available 
+2. Anyone can contribute to or
+fork a project 
+3. Modifications to the code must be disclosed 
+	1. No software-as-a-service loophole for disclosure 
+4. Easy to include in
+another project 
+5. Costs money 
+	1. Cost is proportional to money gained
+	from its use (i.e. royalties) 
+	2. Royalties are proportional to revenue
+	(rather than profit) 
+	3. The revenue considered for royalties is total
+	revenue, not just the gain in revenue from use of the software 
+	4. Royalty distribution between contributors is clearly defined 
+	5. Royalty distribution between contributors can change as the codebase changes 
+	6. A contributor’s share of royalties cannot change without their approval 
+	7. Royalty distribution is consistent with sub-project inclusion 
+	8. A lone developer can set their royalty percentage to whatever they want 
+	9. Changes to the code and changes to the royalty distribution happen at
+	the same time 
+6. Easy to apply to a new project 
+
+=== Royalty distribution table location 
+
+Goal 5.4 means the the royalty distribution needs to be
 written down. This, combined with 5.9, suggests that a top-level text
 file in a project directory could work. Possibly some variety of table
 or csv with "Name", "Email", and "Fraction of Royalties" columns.
 
-==== Adding value to a project, and how that added value is distributed
+=== Adding value to a project, and how that added value is distributed
 
 Goals 5.5 and 5.6 together are tricky. If a contributor, for example,
 does 20% of the work, then leaves, never to be heard from again, future
@@ -290,7 +305,7 @@ For example, if there are 5 contributors with equal shares, and a 7%
 overall royalty cost, the royalty distribution table would look like
 this:
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -300,14 +315,14 @@ this:
 |Contributor E |20
 |===
 
-*Total royalty cost: 7%
+_Total royalty cost: 7%_
 
 Another contributor adding the same amount of value to the project would
 just add another row to the table and raise the total royalty by 20% to
 8.4% (from
 stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%$])
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -318,7 +333,7 @@ stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \f
 |Contributor F |20
 |===
 
-*Total royalty cost 8.4%
+_Total royalty cost 8.4%_
 
 While this should leave all contributors happy, as they were each
 getting stem:[$20/100 * 7\% = 1.4\%$] of revenue as royalties
@@ -343,7 +358,7 @@ work to bring in revenue themselves.
 
 If we start here:
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -353,11 +368,11 @@ If we start here:
 |Contributor E |20
 |===
 
-*Total royalty cost: 7%
+_Total royalty cost: 7%_
 
 And add "just" sixty-seven more equal contributors:
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -369,7 +384,7 @@ And add "just" sixty-seven more equal contributors:
 |Contributor #72 |20
 |===
 
-*Total royalty cost: 100.8%
+_Total royalty cost: 100.8%_
 
 stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \\\Rightarrow 14.4 * 7\% = 100.8\%$]
 
@@ -389,7 +404,7 @@ Round to 1329 shares. Note that the fact that this is rounded means all
 calculations must be done from the number of shares. The final "total
 royalty cost" is imprecise (6.997901…% rather than 7%).
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -401,19 +416,17 @@ royalty cost" is imprecise (6.997901…% rather than 7%).
 |End User |1329
 |===
 
-*Total royalty cost: ~7%
+_Total royalty cost: ~7%_
 
-____
-[!note] The "End User" name is not replaced with an actual name when
+NOTE: The "End User" name is not replaced with an actual name when
 this table is placed in a real project. It is a stand-in for "Whoever
 uses this project under this license".
-____
 
 Then when we add a new contributor, the formula for total royalty cost
 becomes
 stem:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%$]
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |shares
 |Contributor A |20
@@ -426,7 +439,7 @@ stem:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac
 |End User |1328.6
 |===
 
-*Total royalty cost: ~52%
+_Total royalty cost: ~52%_
 
 With each contributor individually getting
 stem:[$\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%$]
@@ -446,27 +459,27 @@ percentage values are approximate)
 
 [stem]
 ++++
-\[\frac{\text{contributor's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{contributor's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{20} * 2769}{\cancel{20} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
+\[\frac{\text{contributor's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{contributor's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{{20} * 2769}{{20} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
 ++++
 The same goes for the end user:
 
 [stem]
 ++++
-\[\frac{\text{end user's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{end user's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{1329} * 2769}{\cancel{1329} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
+\[\frac{\text{end user's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{end user's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{{1329} * 2769}{{1329} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}\]
 ++++
 
 If the contributions make the revenue go up by a factor of ~1.94, the
 math works out.
 
 If shares accurately represent value, then the
-stem:[$\frac{\text{shares after}}{\text{shares before}}$] ratio
+stem:[\frac{\text{shares after}}{\text{shares before}}] ratio
 should also reflect the same rise in revenue. We get
-stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{2769}{1429} = \boxed{{\sim}1.94}$],
+stem:[\frac{\text{shares after}}{\text{shares before}} = \frac{2769}{1429} = \boxed{{\sim}1.94}],
 so no one is seeing any change in income due to later contributions (so
 long as each next contributor gets the appropriate number of shares for
 the value of their work).
 
-==== Forks, includes, and merge requests
+=== Forks, includes, and merge requests
 
 These are all aspects of the same thing as far as the license is
 concerned (assuming both the base and sub-projects are under this
@@ -493,9 +506,10 @@ Now all that’s left is the actual mapping of shares from the sub-project
 to the main project. For example, let’s say there are two existing
 contributors to a project, and they want to include a sub-project
 
-**Main project:
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
+[caption=]
+.Main Project
 |===
 |name |shares
 |Contributor A |20
@@ -504,11 +518,11 @@ contributors to a project, and they want to include a sub-project
 |End User |60
 |===
 
-*Total royalty cost: 40%
+_Total royalty cost: 40%_
 
-**Sub-project:
-
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
+[caption=]
+.Sub-project
 |===
 |name |shares
 |Contributor C |8
@@ -517,11 +531,11 @@ contributors to a project, and they want to include a sub-project
 |End User |90
 |===
 
-*Total royalty cost: 10%
+_Total royalty cost: 10%_
 
 Let’s put these in one table for convenience:
 
-[cols="^,^,^",options="header",]
+[%autowidth, cols="^,^,^",options="header",]
 |===
 |name |main project shares |sub-project shares
 |Contributor A |20 |
@@ -535,7 +549,7 @@ Let’s put these in one table for convenience:
 Before these tables can be combined properly, we need to make the end
 user shares match by multiplying each column by a constant.
 
-[cols="^,^,^",options="header",]
+[%autowidth, cols="^,^,^",options="header",]
 |===
 |name |main project shares |sub-project shares
 |Contributor A |60 |
@@ -546,7 +560,7 @@ user shares match by multiplying each column by a constant.
 |End User |180 |180
 |===
 
-[cols="^,^",options="header",]
+[%autowidth, cols="^,^",options="header",]
 |===
 |name |main project shares
 |Contributor A |60
@@ -557,15 +571,15 @@ user shares match by multiplying each column by a constant.
 |End User |180
 |===
 
-*Total royalty cost: stem:[$\frac{140}{320}={\sim}44\%$]
+_Total royalty cost: stem:[\frac{140}{320}={\sim}44\%]_
 
-=== Current licensing options
+== Current licensing options
 
 There are really two main questions to consider for each of these
 options: 1. Would someone use a library under this license? 2. Would
 someone apply this license to code they are writing?
 
-==== GPL/LGPL/AGPL
+=== GPL/LGPL/AGPL
 
 Free to use, and you need to re-contribute changes made to the code.
 This is bad for business owners to apply to their code, because then
@@ -574,18 +588,18 @@ libraries are good to use, because they’re free and the license is
 limited to the library, but the GPL and AGPL are more virulent, and
 would affect the rest of the codebase.
 
-==== Creative Commons (non-commercial)
+=== Creative Commons (non-commercial)
 
 Totally excludes commercial use. Unthinkable for businesses.
 
-==== Permissive licenses (BSD, MIT, Apache, etc.)
+=== Permissive licenses (BSD, MIT, Apache, etc.)
 
 Free to use, and you can hide any modifications to the code. This is the
 kind of license businesses like to see in the libraries they use, but
 the lack of benefits for the library developer or forced recontribution
 means the quality is often left wanting.
 
-==== Dual licensing
+=== Dual licensing
 
 There are several forms:
 
@@ -602,7 +616,7 @@ license, which is more overhead for developers.
 There is a lot of freedom in defining the proprietary license, which can
 be good for businesses, but is more overhead for lone developers.
 
-==== Software as a service
+=== Software as a service
 
 This is one of the more business-friendly ways of selling software. It
 works, but it’s not a good solution if you care about latency, security,
@@ -610,7 +624,7 @@ or have an inconsistent internet connection.
 
 '''
 
-=== Proposed solution: The Royalty Off Revenue license
+== Proposed solution: The Royalty Off Revenue license
 
 Exactly like its name implies, the Royalty Off Revenue license allows
 anyone to use the licensed software as long as they give the developer a
@@ -633,11 +647,9 @@ with the additional condition that you need to pay a percentage of your
 total annual revenue to the contributors of this project with as defined
 in the included `royalty_distribution_table.csv` file.""
 
-____
-[!Caution] Disclaimer I am not a lawyer.
-____
+IMPORTANT: Disclaimer: I am not a lawyer.
 
-==== The specific behavior we want out of the license:
+=== The specific behavior we want out of the license:
 
 * If someone modifies your code, they need to make that modified code
 available
@@ -663,7 +675,7 @@ of the existing ones
 * The code needs to not cost any money for people who don’t use the
 software to make money
 ** $0-to-use
-** No revenue ==> no royalty payment
+** No revenue => no royalty payment
 * If all creators of a piece of software don’t add required royalties to
 the license, this license should be more or less equivalent to the LGPL
 * If all users of a piece of software don’t get any revenue, this
@@ -680,95 +692,84 @@ to use licensed software.
 
 '''
 
-==== Example use cases:
+=== Example use cases:
 
-===== Simple cases
+==== Simple cases
 
-[arabic]
 . User A _uses_ ROR-licensed software and gains revenue from that use
-
-* ==> Royalty payment on that revenue
-* eg. software as a service: non-zero revenue ==> non-zero royalty
-* eg. a video game: zero revenue ==> zero royalty
-
-[arabic, start=2]
+	* => Royalty payment on that revenue
+	* eg. software as a service: non-zero revenue => non-zero royalty
+	* eg. a video game: zero revenue => zero royalty
 . User A makes Thing B by _using_ ROR-licensed software, and sells it
-
-* ==> Royalty payment on revenue from sale
-* eg. 3D-printing something by using ROR-licensed software
-* eg. writing code with an ROR-licensed editor and selling the results
-
-[arabic, start=3]
+	* => Royalty payment on revenue from sale
+	* eg. 3D-printing something by using ROR-licensed software
+	* eg. writing code with an ROR-licensed editor and selling the results
 . User A makes Thing B that _contains_ ROR-licensed software and sells
 it
-
-* ==> No royalty payment
-* eg. A software or device that includes an ROR-licensed library
-* Note that User A can easily make Thing B not contain ROR-licensed
-software at time of sale, but download it on first startup
-
-[arabic, start=4]
+	* => No royalty payment
+	* eg. A software or device that includes an ROR-licensed library
+	* Note that User A can easily make Thing B not contain ROR-licensed software at time of sale, but download it on first startup
 . User A makes Thing B, _applies_ the ROR-license to it, and sells it
+	* Note that in this scenario, User A has made Thing B from scratch, and
+	the only royalties are payable to User A
+	* => No royalty payment
 
-* Note that in this scenario, User A has made Thing B from scratch, and
-the only royalties are payable to User A
-* ==> No royalty payment
+==== Combinations of simple cases
 
-===== Combinations of simple cases
-
-User A makes Thing B that _contains_ ROR-licensed software and _gives_
-it (no revenue) to User C, who then uses it _without_ gaining revenue -
-Simple case (3) applies to User A. ==> No royalty payment from User A -
-Simple case (1) applies to User C. ==> No royalty payment from User C
-
-User A makes Thing B that _contains_ ROR-licensed software and _gives_
-it (no revenue) to User C, who then _does_ gain revenue by using it -
-Simple case (3) applies to User A. ==> No royalty payment from User A -
-Simple case (1) applies to User C. ==> User C pays royalties off of
+[start=5]
+. User A makes Thing B that _contains_ ROR-licensed software and _gives_
+it (no revenue) to User C, who then uses it _without_ gaining revenue 
+	* Simple case (3) applies to User A. => No royalty payment from User A 
+	* Simple case (1) applies to User C. => No royalty payment from User C
+. User A makes Thing B that _contains_ ROR-licensed software and _gives_
+it (no revenue) to User C, who then _does_ gain revenue by using it
+* Simple case (3) applies to User A. => No royalty payment from User A
+* Simple case (1) applies to User C. => User C pays royalties off of
 revenue gained by using Thing B
 
-User A makes Thing B that _contains_ licensed software and _sells_ it to
-User C, who then uses it _without_ gaining revenue - Simple case (3)
-applies to User A. ==> No royalty payment from User A - Simple case (1)
-applies to User C. ==> User C pays royalty for revenue gained by using
+. User A makes Thing B that _contains_ licensed software and _sells_ it to
+User C, who then uses it _without_ gaining revenue
+* Simple case (3)
+applies to User A. => No royalty payment from User A
+* Simple case (1)
+applies to User C. => User C pays royalty for revenue gained by using
 Thing B (both 0 in this case)
 
-User A makes Thing B, _applies_ the ROR-license to it, and _sells_ it to
-User C, who then _gains revenue by using it_ - Simple case (4) applies
-to User A. ==> No royalty payment from User A - Simple case (1) applies
-to User C. ==> User C pays royalty for revenue gained by using Thing B
+. User A makes Thing B, _applies_ the ROR-license to it, and _sells_ it to
+User C, who then _gains revenue by using it_
+* Simple case (4) applies to User A. => No royalty payment from User A
+* Simple case (1) applies to User C. => User C pays royalty for revenue gained by using Thing B
 
-User A makes Thing B _using_ ROR-licensed software. Thing B also
+. User A makes Thing B _using_ ROR-licensed software. Thing B also
 _contains_ ROR-licensed software, and User A _applies_ additional
 royalties to it (through the ROR license’s mechanism for doing so). User
 A then _sells_ Thing B to User C, and User C _gains revenue_ by _using_
-Thing B. - Simple cases (2), (3), and (4) apply to the initial sale of
-Thing B. ==> User A pays royalties off the sale revenue for the _use_ of
-ROR-licensed software in the creation of Thing B. - Simple case (1)
-applies to User C. ==> User C pays royalties for revenue gained by using
+Thing B.
+* Simple cases (2), (3), and (4) apply to the initial sale of
+Thing B. => User A pays royalties off the sale revenue for the _use_ of
+ROR-licensed software in the creation of Thing B.
+* Simple case (1)
+applies to User C. => User C pays royalties for revenue gained by using
 Thing B. Specifically to User A for the applied royalties, and to
 whoever gains royalties for the ROR-licensed software contained in Thing
 B
 
-=== Frequently Asked Questions:
+== Frequently Asked Questions:
 
-==== Q. If you’re restricting the freedom of users of the licensed software, it’s not really Open Source Software™, is it?
+=== Q. If you’re restricting the freedom of users of the licensed software, it’s not really Open Source Software™, is it?
 
 A. The problem we’re trying to solve is that too many businesses are
 taking advantage of "the freedom to take your work, make buckets of
-money off it, and not give you a cent". Restricting that freedom is the
-only solution to that problem I’ve come across.
+money off it, and not give you a cent". That one is causing more trouble than it's worth.
 
-==== Q. If we inform businesses that they need to voluntarily contribute to our open source projects to maintain the system for their own long-term benefit, surely they’ll do the right thing?
+=== Q. Why go so far? If we just inform businesses that they need to voluntarily contribute to our open source projects to maintain the system for their own long-term benefit, surely they’ll do the right thing?
 
 A. How’s that strategy been working out with taxes / global warming /
 this exact thing?
 
-=== Next steps:
+== Next steps:
 
-[arabic]
 . Get feedback on this document
 . Create a rough draft of the license itself
-
-* As I am not a lawyer, I can only assume that if I write it myself, it
+	* As I am not a lawyer, I can only assume that if I write it myself, it
 will be wrong
