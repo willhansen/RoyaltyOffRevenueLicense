@@ -1,6 +1,7 @@
 = About the Royalty Off Revenue License (Rough Draft)
 :stem: latexmath
 :sectanchors:
+:sectnums:
 // :icons: font
 
 == Intro
@@ -59,7 +60,8 @@ Large overlap in use case with businesses, but with much less budget.
 
 == License goals
 
-=== Source-available [[see-source]]
+[[see-source]]
+=== Source-available 
 
 Meaning anyone can see the source code, not necessarily being $0-to-use
 or having no restrictions on use.
@@ -69,7 +71,8 @@ machine, they can trust that they know what they’re running. It’s well
 established that open source code is generally more secure than closed
 source code.
 
-=== Anyone can contribute to or fork a project [[any-can-contrib]]
+[[any-can-contrib]]
+=== Anyone can contribute to or fork a project 
 
 With open source code, anyone can code up improvements to a library or
 application. One of the great strengths of Open Source Software projects
@@ -79,7 +82,8 @@ fork or pull request.
 Additionally, if a lone project owner starts going "off the rails",
 the community can fork a project and keep going.
 
-=== Modifications to the code must be disclosed [[disclose-code]]
+[[disclose-code]]
+=== Modifications to the code must be disclosed 
 
 There is a lot of duplicate work done by multiple companies trying to
 accomplish the same thing. They all hide their code, and work is wasted.
@@ -203,6 +207,7 @@ Someone being able to remove a contributor’s share of royalties, without
 that contributor’s input, while the code that contributor wrote is still
 in use and bringing in royalties, would not be good.
 
+// TODO: fix list
 Scenarios where it would probably be fine for a contributor to a project
 to not get a share of the royalties coming in: - They agree to it. - All
 the code has been rewritten. Their code is no longer in the project. -
@@ -214,6 +219,7 @@ royalties.
 
 ==== Royalty distribution is consistent with sub-project inclusion [[inclusion-is-contribution]]
 
+// TODO: fix formatting
 Take two cases: 1. Developer A and developer B each contribute 50% of a
 project 2. Case 1 is slightly refactored so developer A has a project
 that includes a second project made by developer B Both cases have
@@ -261,12 +267,12 @@ auto-link):
 .. <<revenue-based>>
 .. <<total-revenue-only>>
 .. <<put-distribution-in-writing>>
-.. Royalty distribution between contributors can change as the codebase changes 
-.. A contributor’s share of royalties cannot change without their approval 
-.. Royalty distribution is consistent with sub-project inclusion 
-.. A lone developer can set their royalty percentage to whatever they want 
-.. Changes to the code and changes to the royalty distribution happen at the same time 
-. Easy to apply to a new project 
+.. <<distribution-can-change>>
+.. <<royalty-change-needs-approval>>
+.. <<inclusion-is-contribution>>
+.. <<custom-cost>>
+.. <<code-and-cost-change-together>>
+. <<easy-to-apply>>
 
 === Royalty distribution table location 
 
@@ -315,7 +321,7 @@ _Total royalty cost: 7%_
 Another contributor adding the same amount of value to the project would
 just add another row to the table and raise the total royalty by 20% to
 8.4% (from
-stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%$])
+stem:[\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%])
 
 [%autowidth, cols="^,^",options="header",]
 |===
@@ -331,8 +337,8 @@ stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \f
 _Total royalty cost 8.4%_
 
 While this should leave all contributors happy, as they were each
-getting stem:[$20/100 * 7\% = 1.4\%$] of revenue as royalties
-before, and stem:[$20/120 * 8.4\% = 1.4\%$] of revenue as royalties
+getting stem:[20/100 * 7\% = 1.4\%] of revenue as royalties
+before, and stem:[20/120 * 8.4\% = 1.4\%] of revenue as royalties
 after, there is clearly an effect on the user of the licensed software,
 who sees their cost go up 20%.
 
@@ -346,7 +352,7 @@ the new feature cut out, and undercut the price of the main project
 (assuming there are others who also don’t need/want that feature).
 
 There is still a problem, though. The royalty percentage does not have a
-cap. The stem:[$\frac{\text{shares after}}{\text{shares before}}$]
+cap. The stem:[\frac{\text{shares after}}{\text{shares before}}]
 ratio can become arbitrarily large, and cause the total royalty cost to
 grow to and beyond 100%. The end user can be squeezed out, despite doing
 work to bring in revenue themselves.
@@ -381,7 +387,7 @@ And add "just" sixty-seven more equal contributors:
 
 _Total royalty cost: 100.8%_
 
-stem:[$\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \\\Rightarrow 14.4 * 7\% = 100.8\%$]
+stem:[\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \\\Rightarrow 14.4 * 7\% = 100.8\%]
 
 Using the project costs more than 100% of revenue, and the end user gets
 no revenue themselves, even needing to pay more money than the revenue
@@ -419,7 +425,7 @@ uses this project under this license".
 
 Then when we add a new contributor, the formula for total royalty cost
 becomes
-stem:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%$]
+stem:[\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%]
 
 [%autowidth, cols="^,^",options="header",]
 |===
@@ -437,13 +443,13 @@ stem:[$\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac
 _Total royalty cost: ~52%_
 
 With each contributor individually getting
-stem:[$\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%$]
+stem:[\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%]
 of revenue
 
 At this point, you may notice that each contributor’s fraction of
 revenue just went down. This makes sense if you consider the revenue
 before the contributions and after the contributions as two different
-values stem:[$R_1$] and stem:[$R_2$], with stem:[$R_2$]
+values stem:[R_1] and stem:[R_2], with stem:[R_2]
 being larger due to the value increase of the project allowing the end
 user to bring in more revenue.
 
