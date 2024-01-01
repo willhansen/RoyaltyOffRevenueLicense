@@ -2,6 +2,7 @@
 :stem: latexmath
 :sectanchors:
 :sectnums:
+:xrefstyle: full
 // :icons: font
 
 == Intro
@@ -60,8 +61,8 @@ Large overlap in use case with businesses, but with much less budget.
 
 == License goals
 
-[[see-source]]
-=== Source-available 
+[#see-source]
+=== Source-available
 
 Meaning anyone can see the source code, not necessarily being $0-to-use
 or having no restrictions on use.
@@ -71,7 +72,7 @@ machine, they can trust that they know what they’re running. It’s well
 established that open source code is generally more secure than closed
 source code.
 
-[[any-can-contrib]]
+[#any-can-contribute]
 === Anyone can contribute to or fork a project 
 
 With open source code, anyone can code up improvements to a library or
@@ -82,7 +83,7 @@ fork or pull request.
 Additionally, if a lone project owner starts going "off the rails",
 the community can fork a project and keep going.
 
-[[disclose-code]]
+[#disclose-code]
 === Modifications to the code must be disclosed 
 
 There is a lot of duplicate work done by multiple companies trying to
@@ -90,7 +91,7 @@ accomplish the same thing. They all hide their code, and work is wasted.
 By forcing disclosure of code modifications, that duplicate work is
 eliminated.
 
-[[no-saas-loophole]]
+[#no-saas-loophole]
 ==== No software-as-a-service loophole for disclosure
 
 Some licenses (like the GPL and LGPL) only require source code to be
@@ -99,7 +100,7 @@ the binary on a private server on external data, and not have to
 disclose a thing. Other licenses such as the AGPL and SSPL avoid this
 problem.
 
-[[easy-include]]
+[#easy-include]
 === Easy to include in another project
 
 Another strength of Open Source Software licenses is that having all the
@@ -116,7 +117,7 @@ only requires changes to a covered library to be published, rather than
 the code of an entire project that includes the library, like the GPL
 and AGPL.
 
-[[costs-money]]
+[#costs-money]
 === Costs money
 
 "But wait", you say, "isn't $0-to-use good?"
@@ -140,7 +141,7 @@ while also being some of the most valuable.
 Also, businesses don’t want to hand valuable work to their competitors
 for free.
 
-[[is-royalty]]
+[#is-royalty]
 ==== Cost is proportional to money gained from its use (i.e. royalties)
 
 This provides a direct incentive for software contributors to make
@@ -154,13 +155,13 @@ This also has the benefit of being free for people who don’t make money
 off the use of the library, such as students, hobbyists, and pre-revenue
 startups. 
 
-[[revenue-based]]
+[#revenue-based]
 ==== Royalties are proportional to revenue (rather than profit)
 
 Profit can be easily manipulated by tricky accounting (like hollywood
 accounting). Revenue is much less ambiguous.
 
-[[total-revenue-only]]
+[#total-revenue-only]
 ==== The revenue considered for royalties is total revenue, not just the gain in revenue from use of the software
 
 I’m not 100% on this one. The motivating question here is whether a
@@ -197,19 +198,19 @@ a finer-grained timescale is better, but I don’t know how visible those
 revenue numbers are from outside a company. - Pays the same amount of
 royalties as company 1
 
-[[put-distribution-in-writing]]
+[#put-distribution-in-writing]
 ==== Royalty distribution between contributors is clearly defined
 
 We’re dealing with money, so how that money is going to be distributed
 needs to be in writing.
 
-[[distribution-can-change]]
+[#distribution-can-change]
 ==== Royalty distribution between contributors can change as the codebase changes
 
 People join and leave project teams all the time. The license needs to
 account for that.
 
-[[royalty-change-needs-approval]]
+[#royalty-change-needs-approval]
 ==== A contributor’s share of royalties cannot change without their approval
 
 Someone being able to remove a contributor’s share of royalties, without
@@ -226,7 +227,7 @@ from before that contributor made any contributions. - Using a later
 version of the project, with their code in it, should still give them
 royalties.
 
-[[inclusion-is-contribution]]
+[#inclusion-is-contribution]
 ==== Royalty distribution is consistent with sub-project inclusion
 
 // TODO: fix formatting
@@ -237,7 +238,7 @@ essentially the same contributions by each developer, and any end user
 would not be able to tell the difference. So the royalty distribution
 should be the same between the two cases.
 
-[[custom-cost]]
+[#custom-cost]
 ==== A lone developer can set their royalty percentage to whatever they want
 
 Whether a developer automates 5% or 95% of a process, the license should be
@@ -251,13 +252,13 @@ If they set the royalty to 100% of revenue, no one can gain revenue by
 using their project. If they set the royalty to 0% of revenue, the
 project is effectively just $0-to-use for everyone.
 
-[[code-and-cost-change-together]]
+[#code-and-cost-change-together]
 ==== Changes to the code and changes to the royalty distribution happen at the same time
 
 To keep things simple, storing the royalty distribution numbers with the
 code would allow everything to be synced up together.
 
-[[easy-to-apply]]
+[#easy-to-apply]
 === Easy to apply to a new project
 
 This license should be "fire and forget". Just set the price, slap it
@@ -271,7 +272,7 @@ auto-link):
 *Goals:*
 
 . <<see-source>>
-. <<any-can-contrib>>
+. <<any-can-contribute>>
 . <<disclose-code>>
 .. <<no-saas-loophole>>
 . <<easy-include>>
