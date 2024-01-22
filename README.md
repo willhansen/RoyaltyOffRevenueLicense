@@ -144,7 +144,8 @@ This license should be "fire and forget".  Just set the price,  slap it on uploa
 ## Consequences of these goals
 
 Let's list out and number the target features for easy reference (TODO: auto-link):
-**Goals:
+
+**Goals:**
 1. Source-available
 2. Anyone can contribute to or fork a project
 3. Modifications to the code must be disclosed
@@ -183,9 +184,9 @@ the royalty distribution table would look like this:
 |   Contributor D    |   20   |
 |   Contributor E    |   20   |
 
-*Total royalty cost: 7%   
+*Total royalty cost: 7%*   
 
-Another contributor adding the same amount of value to the project would just add another row to the table and raise the total royalty by 20% to 8.4% (from $\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%$)
+Another contributor adding the same amount of value to the project would just add another row to the table and raise the total royalty by 20% to 8.4% (from $`\frac{\text{shares after}}{\text{shares before}} = \frac{20*6}{20*5} = \frac{120}{100}= 1.2 \Rightarrow 1.2 * 7\% = 8.4\%`$)
 
 |        name        | shares |
 |:------------------:|:------:|
@@ -196,7 +197,7 @@ Another contributor adding the same amount of value to the project would just ad
 |   Contributor E    |   20   |
 |   Contributor F    |   20   |
 
-*Total royalty cost  8.4% 
+*Total royalty cost  8.4%* 
 
 While this should leave all contributors happy, as they were each getting $20/100 * 7\% = 1.4\%$ of revenue as royalties before, and  $20/120 * 8.4\% = 1.4\%$ of revenue as royalties after, there is clearly an effect on the user of the licensed software, who sees their cost go up 20%.
 
@@ -217,7 +218,7 @@ If we start here:
 |   Contributor D    |   20   |
 |   Contributor E    |   20   |
 
-*Total royalty cost: 7%   
+*Total royalty cost: 7%*   
 
 And add "just" sixty-seven more equal contributors:
 
@@ -231,15 +232,16 @@ And add "just" sixty-seven more equal contributors:
 |       ...       |  ...   |
 | Contributor #72 |   20   |
 
-*Total royalty cost: 100.8%   
+*Total royalty cost: 100.8%*
 
-$\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \Rightarrow 14.4 * 7\% = 100.8\%$
+$`\frac{\text{shares after}}{\text{shares before}} = \frac{20*72}{20*5} = \frac{1440}{100}= 14.4 \Rightarrow 14.4 * 7\% = 100.8\%`$
 
 Using the project costs more than 100% of revenue, and the end user gets no revenue themselves, even needing to pay more money than the revenue they bring in.  This doesn't seem right, as even if the value of the software has gone up by a factor of 14, the end user is still  doing valuable work they should be getting money for.
 
 So we add a line of shares for them:
 
-$$\text{end user shares} = \frac{\text{sum of contributor shares}}{\text{target royalty cost}} * (100\% - \text{target royalty cost}) = \frac{100}{7\%} * 93\% = 1328.5714$$
+$`\text{end user shares} = \frac{\text{sum of contributor shares}}{\text{target royalty cost}} * (100\% - \text{target royalty cost}) = \frac{100}{7\%} * 93\% = 1328.5714`$
+
 Round to 1329 shares.  Note that the fact that this is rounded means all calculations must be done from the number of shares.  The final "total royalty cost" is imprecise (6.997901...% rather than 7%).
 
 |     name      | shares |
@@ -252,12 +254,12 @@ Round to 1329 shares.  Note that the fact that this is rounded means all calcula
 |               |        |
 |   End User    |  1329  |
 
-*Total royalty cost: ~7%   
+*Total royalty cost: ~7%*   
 
 >[!note]
 >The "End User" name is not replaced with an actual name when this table is placed in a real project.  It is a stand-in for "Whoever uses this project under this license".
 
-Then when we add a new contributor, the formula for total royalty cost becomes $\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%$
+Then when we add a new contributor, the formula for total royalty cost becomes $`\frac{\text{sum of contributor shares}}{\text{sum of all shares}} = \frac{20*72}{20*72 + 1329} = \frac{1440}{2769}= {\sim}0.52 = {\sim}52\%`$
 
 |      name       | shares |
 |:---------------:|:------:|
@@ -270,16 +272,19 @@ Then when we add a new contributor, the formula for total royalty cost becomes $
 |                 |        |
 |    End User     | 1328.6 |
 
-*Total royalty cost: ~52%   
+*Total royalty cost: ~52%*
 
-With each contributor individually getting $\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%$ of revenue
+With each contributor individually getting $`\frac{\text{contributor shares}}{\text{sum of all shares}} = \frac{20}{2769} = {\sim}0.0072 = {\sim}0.72\%`$ of revenue
 
 At this point, you may notice that each contributor's fraction of revenue just went down.  This makes sense if you consider the revenue before the contributions and after the contributions as two different values $R_1$ and $R_2$, with $R_2$ being larger due to the value increase of the project allowing the end user to bring in more revenue.  
 
 Everything is fine if an early contributor is bringing in the same amount of money before and after the later contributions. (Again note that these calculations must be done with the numbers of shares, as the percentage values are approximate)
-$$\frac{\text{contributor's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{contributor's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{20} * 2769}{\cancel{20} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}$$
+
+$`\frac{\text{contributor's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{contributor's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{20} * 2769}{\cancel{20} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}`$
+
 The same goes for the end user:
-$$\frac{\text{end user's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{end user's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{1329} * 2769}{\cancel{1329} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}$$
+
+$`\frac{\text{end user's shares at start}}{\text{total shares at start}} * R_1 = \frac{\text{end user's shares at end}}{\text{total shares at end}} * R_2 \\\Rightarrow \frac{\cancel{1329} * 2769}{\cancel{1329} * 1429} * R_1 = R_2 \\\Rightarrow \boxed{ \frac{R_2}{R_1} = {\sim}1.94}`$
 
 If the contributions make the revenue go up by a factor of ~1.94, the math works out.
 
@@ -299,7 +304,7 @@ This is good because it allows us to treat every sub-project inclusion as just a
 Now all that's left is the actual mapping of shares from the sub-project to the main project. 
 For example, let's say there are two existing contributors to a project, and they want to include a sub-project
 
-**Main project:
+**Main project:**
 
 |     name      | shares |
 |:-------------:|:------:|
@@ -307,10 +312,11 @@ For example, let's say there are two existing contributors to a project, and the
 | Contributor B |   20   |
 |               |        |
 |   End User    | 60       |
-*Total royalty cost: 40%
+
+*Total royalty cost: 40%*
 
 
-**Sub-project:
+**Sub-project:**
 
 |     name      | shares |
 |:-------------:|:------:|
@@ -318,7 +324,8 @@ For example, let's say there are two existing contributors to a project, and the
 | Contributor D |   2    |
 |               |        |
 |   End User    | 90       |
-*Total royalty cost: 10% 
+
+*Total royalty cost: 10%* 
 
 Let's put these in one table for convenience:
 
@@ -351,7 +358,8 @@ Before these tables can be combined properly, we need to make the end user share
 | Contributor D | 4 |
 |  |  |
 | End User | 180 |
-*Total royalty cost: $\frac{140}{320}={\sim}44\%$
+
+*Total royalty cost:* $`\frac{140}{320}={\sim}44\%`$
 
 ## Current licensing options
 
@@ -405,7 +413,7 @@ Something along the lines of:
 "This license is the LGPL license, but with the additional condition that you need to pay a percentage of your total annual revenue to the contributors of this project with as defined in the included `royalty_distribution_table.csv` file."
 
 
-> [!Caution] Disclaimer 
+> [!Info] Disclaimer 
 > I am not a lawyer.
 
 ### The specific behavior we want out of the license:
