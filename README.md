@@ -290,6 +290,11 @@ If the contributions make the revenue go up by a factor of ~1.94, the math works
 
 If shares accurately represent value, then the $\frac{\text{shares after}}{\text{shares before}}$ ratio should also reflect the same rise in revenue.  We get $\frac{\text{shares after}}{\text{shares before}} = \frac{2769}{1429} = \boxed{{\sim}1.94}$, so no one is seeing any change in income due to later contributions (so long as each next contributor gets the appropriate number of shares for the value of their work).
 
+At this point, the question becomes: "If neither the original contributors nor the end users are getting any more money, why would they accept this new contribution?".  
+1) The contributor could take less shares themselves as incentive to merge their contribution.  (The exact value of their contribution is likely fuzzy in any case.  User interfaces or documentation being classic examples.)
+2) The contributor can simply fork the project at any time. If they believe their contribution will add more value than they can negotiate in shares, this could be a good route.
+
+
 ### Forks, includes, and merge requests
 
 These are all aspects of the same thing as far as the license is concerned (assuming both the base and sub-projects are under this license).  
